@@ -1,39 +1,184 @@
-- section: Selected Work
-  authors: "Helveston, John, **Gang He**\\*, and Michael Davidson"
-  year: 2022
-  date: 2022-10-26
-  title: Quantifying the Cost Savings of Global Solar Photovoltaic Supply Chains
-  path: "https://drganghe.github.io/posts/2022-10-nature-cost-savings-of-global-solar-pv-value-chains/index.html"
-  journal: Nature
-  volume: 612
-  pages: 83-87
-  doi: 10.1038/s41586-022-05316-6
-  preprint: "https://drganghe.github.io/files/papers/2022-nature-solar-supply-chains-preprint.pdf"
-  shareit: "https://rdcu.be/enuBz"
-  github: "https://github.com/jhelvy/solar-learning-2021"
-  data: "https://doi.org/10.5281/zenodo.6989075"
-  highlycited: 1
-  hotpaper: 1
-  awards: "[IAMC2022 Best Poster Award](https://drganghe.github.io/posts/2022-12-iamc-2022-best-poster-award/index.html)"
-  mediacoverage: "[SBU News](https://news.stonybrook.edu/environmental-stewardship/international-collaboration-is-key-to-addressing-global-climate-change/) | [GWU News](https://mediarelations.gwu.edu/global-collaboration-saved-countries-67-billion-solar-panel-production-costs) | [UCSD News](https://today.ucsd.edu/story/open-trade-saves-countries-billions-in-solar-panel-production) | [*Nature* Research Highlights](https://web.archive.org/web/20230603073317/https://www.natureasia.com/en/research/highlight/14262) | [*E&E News*](https://www.eenews.net/articles/how-bidens-made-in-america-solar-strategy-may-backfire/) | [*Foreign Policy*](https://foreignpolicy.com/2023/09/21/us-china-climate-cooperation-trade-ira-green-technology/) | [GRID News](https://web.archive.org/web/20240106093827/https://themessenger.com/grid/the-us-is-reducing-its-reliance-on-china-for-green-technology-could-that-slow-progress-on-climate-change) | [PV Magazine](https://pv-magazine-usa.com/2022/10/26/a-globalized-supply-chain-is-key-to-cutting-costs-in-solar-module-manufacturing/) | [dot.LA](https://dot.la/deglobalization-2658510850.html) | [pvbuzz](https://pvbuzz.com/new-study-quantifies-cost-savings-solar-industry-globalized-supply-chains/) | [InnovateLongIsland](https://www.innovateli.com/no-736-on-immigrants-solar-energy-supplies-and-other-american-strengths-with-lots-of-candy-to-share/) | [Mercom India](https://mercomindia.com/imposing-import-tariffs-hamper-of-solar-energy-study/) | [China News](https://www.chinanews.com.cn/cj/2022/10-27/9881042.shtml) | [Science and Technology Daily](http://www.stdaily.com/index/kejixinwen/202210/e38ea5c3a3054d87a43996d39a2924ab.shtml)"
-  invitedpresentation: "[Peking University](https://cese.pku.edu.cn/images/content/2024-03/20240325151929637875.png) | [Tsinghua University](https://mp.weixin.qq.com/s/c_Z0RHwzkjziq-QvdUzs-g) | [Harvard University](https://www.belfercenter.org/event/energy-policy-seminar-michael-davidson-decoupling-china-clean-tech) (M.D.) | ITIF (J.H.) | [Climate Change Economics Forum](https://mp.weixin.qq.com/s/teDhroPPbaA6z1pVU2JrwA)"
-  categories: [2022, selected, peer-reviewed, award, highly-cited, hot-paper, nature-series, supply-chain, solar, united-states, china, germany]
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Devictor, Vincent and Dakos, Vasilis"
+  year: 2026
+  title: Tracking changes in birds' interaction milieu
+  path: "https://peercommunityjournal.org/articles/10.24072/pcjournal.730/"
+  journal: Peer Community Journal
+  volume: 6
+  issue: 2804-3871
+  doi: 10.24072/pcjournal.730
 
 - section: Peer-reviewed Journal Paper
-  authors: "**He, Gang**\\*, Jiang Lin\\*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke\\*"
-  year: 2020
-  date: 2020-05-15
-  title: Rapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System
-  path: "https://drganghe.github.io/posts/2020-05-ncomms-rapid-re-cost/index.html"
-  journal: Nature Communications
-  volume: 11
-  issue: 1
-  pages: 2486
-  doi: 10.1038/s41467-020-16184-x
-  pdf: "https://www.nature.com/articles/s41467-020-16184-x.pdf"
-  supplemental: "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-16184-x/MediaObjects/41467_2020_16184_MOESM1_ESM.pdf"
-  github: "https://github.com/switch-model/switch-china-open-model"
+  authors: "Gómez-Catasús, Julia and Benítez-López, Ana and Díaz, Mario and González del Portillo, David and Pérez-Granados, Cristian and Alonso, Juan Carlos and Arroyo, Beatriz and Abril-Colón, Inmaculada and Barrero, Adrián and Barrientos, Rafael and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Brotons, Lluís and Bustillo-de la Rosa, Daniel and Cabodevilla, Xabier and Carrascal, Luis M. and Carricondo, Ana and Casas, Fabián and Catry, Inês and Crispim-Mendes, Tiago and Erciyas-Yavuz, Kiraz and Galván, Ismael and Gameiro, João and García, Jesús T. and Giralt, David and Illera, Juan Carlos and Leiva, Antonio and López-Iborra, Germán M. and Mañosa, Santi and Marques, Ana T. and Martín, Carlos A. and Medrano-Vizcaíno, Pablo and Morales, Manuel B. and Moreira, Francisco and Mougeot, François and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Oñate-Casado, Javier and Palacín, Carlos and Pearce-Higgins, James W. and Petrusková, Tereza and Reverter, Margarita and Revilla-Martín, Natalia and **Rigal, Stanislas** and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Sanz-Pérez, Ana and Seoane, Javier and Serrano, David and Silva, João Paulo and Tarjuelo, Rocío and Traba, Juan and Tryjanowski, Piotr and Ucero, Alberto and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Başkent, Emin Zeki and Zurdo, Julia and Bravo, Carolina"
+  year: 2025
+  title: "Alarming conservation status of Western European steppe birds and their habitats: An expert-based review of current threats, traits and knowledge gaps"
+  path: "https://www.sciencedirect.com/science/article/pii/S0006320725004513?via%3Dihub"
+  journal: Biological Conservation
+  volume: 311
+  doi: 10.1016/j.biocon.2025.111414
+
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Perrot, Thomas"
+  year: 2025
+  title: "Pesticides in France: ten years of combined exposure to active substances in land, air and surface water"
+  path: "https://www.nature.com/articles/s41597-025-04864-6"
+  journal: Scientific Data
+  volume: 12
+  issue: 512
+  doi: 10.1038/s41597-025-04864-6
+
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Calvet, Coralie and Tardieu, Léa and Roussel, Sébastien and Vaissière, Anne-Charlotte"
+  year: 2025
+  title: The hidden dimension of low-carbon public transport policies
+  path: "https://www.sciencedirect.com/science/article/pii/S092180092500151X"
+  journal: Ecological Economics
+  volume: 236
+  issue: 0921-8009
+  doi: 10.1016/j.ecolecon.2025.108668
+
+- section: Peer-reviewed Journal Paper
+  authors: "Pérez-Granados, Cristian and Benítez-López, Ana and Díaz, Mario and Gameiro, João and Lenzner, Bernd and Roura-Pascual, Núria and Gómez-Catasús, Julia and Tarjuelo, Rocío and Barrero, Adrián and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Bravo, Carolina and Brotons, Lluís and la Rosa, Daniel Bustillo-de and Cabodevilla, Xabier and Búrdalo, Antonio Calvo and Carricondo, Ana and Casas, Fabián and Concepción, Elena D. and Constán-Nava, Soraya and Crispim-Mendes, Tiago and Giralt, David and Golivets, Marina and Latombe, Guillaume and Leiva, Antonio and López-Iborra, Germán M. and López-Poveda, Gabriel and Mañosa, Santi and Martín, Carlos A. and Morales, Manuel B. and Moreira, Francisco and Mougeot, Francois and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Reverter, Margarita and Revilla-Martín, Natalia and **Rigal, Stanislas** and Jiménez, Gema Ruiz and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Santos, Carlos and Sanz-Pérez, Ana and Serrano, David and Silva, João Paulo and Torrijo, Antonio and Traba, Juan and Tryjanowski, Piotr and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Zurdo, Julia and Marques, Ana T."
+  year: 2025
+  title: Key conservation actions for European steppes in the context of the Post-2020 Global Biodiversity Framework
+  path: "https://link.springer.com/article/10.1007/s11625-024-01602-6"
+  journal: Sustainability Science
+  volume: 20
+  doi: 10.1007/s11625-024-01602-6
+
+- section: Peer-reviewed Journal Paper
+  authors: "Solé, Magali and Brendel, Stephan and Aldrich, Annette and Dauber, Jens and Ewald, Julie and Duquesne, Sabine and Gottschalk, Eckhard and Hoffmann, Jörg and Kuemmerlen, Mathias and Leake, Alastair and others"
+  year: 2024
+  title: "Assessing in-field pesticide effects under European regulation and its implications for biodiversity: a workshop report"
+  path: "https://link.springer.com/article/10.1186/s12302-024-00977-8"
+  journal: Environmental Sciences Europe
+  volume: 36
+  issue: 153
+  doi: 10.1186/s12302-024-00977-8
+
+- section: Peer-reviewed Journal Paper
+  authors: "Otero, Iago and **Rigal, Stanislas** and Pereira, Laura and Kim, HyeJin and Gamboa, Gonzalo and Tello, Enric and Gr{\\^e}t-Regamey, Adrienne"
+  year: 2024
+  title: Degrowth scenarios for biodiversity? Key methodological steps and a call for collaboration
+  path: "https://link.springer.com/article/10.1007/s11625-024-01483-9"
+  journal: Sustainability Science
+  doi: 10.1007/s11625-024-01483-9
+
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Knape, Jonas"
+  year: 2024
+  title: Investigating the heterogeneity within Wild bird indices in Europe
+  path: "https://www.sciencedirect.com/science/article/pii/S0006320724000132"
+  journal: Biological Conservation
+  volume: 290
+  doi: 10.1016/j.biocon.2024.110452
+
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Dakos, Vasilis and Alonso, Hany and Auniņš, Ainārs and Benkő, Zoltán and Brotons, Lluís and Chodkiewicz, Tomasz and Chylarecki, Przemysław and De Carli, Elisabetta and Del Moral, Juan Carlos and Domşa, Cristian and Escandell, Virginia and Fontaine, Benoît and Foppen, Ruud and Gregory, Richard and Harris, Sarah and Herrando, Sergi and Husby, Magne and Ieronymidou, Christina and Jiguet, Frédéric and Kennedy, John and Klvaňová, Alena and Kmecl, Primož and Kuczyński, Lechosław and Kurlavičius, Petras and Kålås, John Atle and Lehikoinen, Aleksi and Lindström, Åke and Lorrillière, Romain and Moshøj, Charlotte and Nellis, Renno and Noble, David and Eskildsen, Daniel Palm and Paquet, Jean-Yves and Pélissié, Mathieu and Pladevall, Clara and Portolou, Danae and Reif, Jiří and Schmid, Hans and Seaman, Benjamin and Szabo, Zoltán D. and Szép, Tibor and Florenzano, Guido Tellini and Teufelbauer, Norbert and Trautmann, Sven and Van Turnhout, Chris and Vermouzek, Zdeněk and Vikstrøm, Thomas and Voříšek, Petr and Weiserbs, Anne and Devictor, Vincent"
+  year: 2023
+  title: Farmland practices are driving bird population decline across Europe
+  path: "https://www.pnas.org/doi/10.1073/pnas.2216573120"
+  journal: PNAS
+  volume: 120
+  issue: 21
+  doi: 10.1073/pnas.2216573120
   highlycited: 1
-  mediacoverage: "[SBU News](https://news.stonybrook.edu/newsroom/study-shows-decrease-in-renewable-energy-costs-may-serve-as-an-accelerator-for-clean-energy-expansion/) | [LBL News](https://eta.lbl.gov/news/falling-prices-could-accelerate-china) | [*Carbon Brief* Headline](https://www.carbonbrief.org/guest-post-chinas-power-sector-could-be-10-per-cent-cheaper-in-2030-with-more-renewables) | [*InsideClimateNews*](https://insideclimatenews.org/news/04062020/inside-clean-energy-arkansas-rooftop-solar/) | [*E&E News*/*ClimateWire*](https://subscriber.politicopro.com/article/eenews/1063354565) | [*Forbes*](https://www.forbes.com/sites/energyinnovation/2020/08/10/plummeting-renewable-energy-battery-prices-mean-china-could-hit-62-clean-power-and-cut-costs-11-by-2030/?sh=29fa3f2f1519) | [*Nature* News](https://www.nature.com/articles/d41586-020-02927-9)"
-  invitedpresentation: "[Asia Pacific Energy Research Centre (APERC) Annual Conference 2020](https://aperc.or.jp/presentations/event_detail.php?article_info__id=388) | [Beijing Institute of Technology](https://ceep.bit.edu.cn/xzhd/xshdyg/8c8df4e81437434fb80b7ebb8d973b4c.htm) | Dartmouth College | [Harvard Kennedy School Growth Lab](https://growthlab.hks.harvard.edu/event/research-seminar-achieving-power-sector-carbon-neutrality-in-a-low-cost-renewable-era/)"
-  categories: [2020, selected, peer-reviewed, highly-cited, nature-series, power-system, switch-china, solar, wind, storage]
+
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Knape, Jonas"
+  year: 2023
+  title: A toolbox to explore the composition of species dynamics behind multi-species indices
+  path: "https://onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.14117"
+  journal: Methods in Ecology and Evolution
+  volume: 14
+  issue: 2041-210X
+  doi: 10.1111/2041-210X.14117
+
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas**"
+  year: 2022
+  title: "Social-environmental index: combining social and biophysical indicators reveals limits to growth"
+  path: "https://ecologyandsociety.org/vol27/iss2/art33/"
+  journal: Ecology and Society
+  volume: 27
+  issue: 2
+  doi: 10.5751/ES-13238-270233
+
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Devictor, Vincent and Gaüzère, Pierre and Kéfi, Sonia and Forsman, Jukka T. and Kajanus, Mira H. and Mönkkönen, Mikko and Dakos, Vasilis"
+  year: 2022
+  title: Biotic homogenisation in bird communities leads to large-scale changes in species associations
+  path: "https://nsojournals.onlinelibrary.wiley.com/doi/pdf/10.1111/oik.08756"
+  journal: Oikos
+  volume: 2022
+  issue: 1600-0706
+  doi: 10.1111/oik.08756
+
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Devictor, Vincent and Dakos, Vasilis"
+  year: 2020
+  title: A method for classifying and comparing non-linear trajectories of ecological variables
+  path: "https://www.sciencedirect.com/science/article/abs/pii/S1470160X20300509"
+  journal: Ecological Indicators
+  volume: 112
+  issue: 1470-160X
+  doi: 10.1016/j.ecolind.2020.106113
+
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Kirch, Patrick and Worthy, Trevor"
+  year: 2018
+  title: "New prehistoric avifaunas from the Gambier Group, French Polynesia"
+  path: "https://palaeo-electronica.org/content/2018/2360-gambier-group-fossil-avifaunas"
+  journal: Palaeontologia Electronica
+  volume: 21
+  issue: 3
+  doi: 10.26879/892
+
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Martill, David M and Sweetman, Steven C"
+  year: 2018
+  title: "A new pterosaur specimen from the Upper Tunbridge Wells Sand Formation (Cretaceous, Valanginian) of southern England and a review of Lonchodectes sagittirostris (Owen 1874)"
+  path: "https://chooser.crossref.org/?doi=10.1144%2FSP455.5"
+  journal: "Geological Society, London, Special Publications"
+  volume: 455
+  issue: 1
+  pages: 221-232
+  doi: 10.1144/SP455.5
+
+- section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Cuny, Gilles"
+  year: 2016
+  title: "On the rarity of anterior teeth of Asteracanthus magnus (Euselachii: Hybodontiformes)"
+  path: "https://www.schweizerbart.de/papers/njgpa/detail/279/85425/On_the_rarity_of_anterior_teeth_of_Asteracanthus_m?af=crossref"
+  journal: Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen
+  volume: 279
+  issue: 1
+  doi: 10.1127/njgpa/2016/0538
+
+- section: Thesis
+  authors: "**Rigal, Stanislas**"
+  year: 2021
+  title: "Tout est lié : Réponses complexes de la biodiversité aux changements globaux et déterminants socio-économiques"
+  path: "https://theses.fr/2021MONTG048"
+  doi: 10.70675/e0f497fcz3292z456eza1aez6afaaf44b910
+
+- section: Newspaper
+  authors: Collectif
+  year: 2025
+  title: "« Non, la décroissance n’est pas un concept flou » : dix économistes répondent à Jean Pisani-Ferry"
+  path: "https://www.lemonde.fr/idees/article/2025/07/05/non-la-decroissance-n-est-pas-un-concept-flou-dix-economistes-repondent-a-jean-pisani-ferry_6618660_3232.html"
+  journal: Le Monde
+
+- section: Newspaper
+  authors: "**Rigal, Stanislas** and Devictor, Vincent"
+  year: 2024
+  title: "Les oiseaux, victimes collatérales de l’intensiﬁcation agricole en Europe"
+  path: "https://theconversation.com/les-oiseaux-victimes-collaterales-de-lintensification-agricole-en-europe-223495"
+  journal: The Conversation
+
+- section: Newspaper
+  authors: "**Rigal, Stanislas**"
+  year: 2020
+  title: "« S’il y a un ennemi à la nature, c’est le capitalisme extractiviste et productiviste »"
+  path: "https://www.lemonde.fr/idees/article/2020/11/27/s-il-y-a-un-ennemi-a-la-nature-c-est-le-capitalisme-extractiviste-et-productiviste_6061307_3232.html"
+  journal: Le Monde

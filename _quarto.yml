@@ -21,20 +21,20 @@ website:
 #        href: index.qmd
       - text: About
         menu:
-          - text: News
-            href: posts.qmd#category=news
+          - text: CV
+            href: teaching.qmd
           #- text: Events
           #  href: posts.qmd#category=event      
           - text: Contact
             href: contact.qmd             
       - text: Research
         menu:
-          - text: Publications Listing  # Automatically generated from publications.xlsx
+          - text: Publications  # Automatically generated from publications.xlsx
             href: pub-listing.qmd
-          - text: Publications  # Manually curated list of publications
-            href: publications.qmd            
-          - text: Selected Papers
-            href: posts.qmd#category=paper
+          #- text: Publications  # Manually curated list of publications
+          #  href: publications.qmd            
+          #- text: Selected Papers
+          #  href: posts.qmd#category=paper
           - text: Grants
             href: projects.qmd                                
       #- text: Teaching # Comment the Teaching part out to remove the Teaching page
@@ -50,19 +50,13 @@ website:
       - text: CV
         href: files/nsf-biosketch.pdf
       - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
-        target: _blank
-      - text: "{{< fa brands bluesky >}}"
-        href: https://bsky.app
-        target: _blank      
-      - icon: rss
-        href: posts.xml
+        href: https://github.com/StanislasRigal
         target: _blank
   
   page-navigation: true
   
   page-footer: 
-    left: "[Stanislas Rigal(https://github.com/StanislasRigal) &copy; <script>document.write(new Date().getFullYear())</script>" 
+    left: "Stanislas Rigal &copy; <script>document.write(new Date().getFullYear())</script>" 
     center: "Build on [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io)"
     right:  
       - icon: github

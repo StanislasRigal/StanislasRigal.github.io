@@ -1,7 +1,7 @@
 ---
 title: "Stanislas Rigal"
 description-meta: "Personal website"
-image: "files/images/placeholder4.JPG"
+image: "files/images/DSC_7003c.png"
 page-navigation: false
 toc: false
 #sidebar: false
@@ -14,7 +14,7 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://fr.linkedin.com/in/stanislas-rigal-762087281
       target: _blank
     - text: "{{< ai orcid >}} ORCID"   # use academic icons, "" are needed, you also need to install the fontawesome extension
       href: https://orcid.org/0000-0002-3180-4592
@@ -29,7 +29,11 @@ about:
 
 :::{#hero-heading}
 
+Après une thèse soutenue en 2021 à l'Institut des Sciences de l'Évolution de Montpellier (ISEM) sur l’impact des activités humaines sur la biodiversité à l’échelle des communautés, j'ai poursuivi mes recherches à l'Université des Sciences Agricole (SLU) à Uppsala en Suède en 2022 puis à l'Université Paris Saclay en 2023. J'ai ensuite réalisé un postdoctorat avec INRAE à la Maison de la Télédétection à Montpellier et je suis actuellement en postdoctorat au Centre de Synthèse et d'Analyses sur la Biodiversité (CESAB, FRB). Mes recherches se concentrent sur deux pôles interconnectés, la biologie de la conservation et l'économie écologique.
 
+Pour le premier pôle, en utilisant les données de sciences participatives ainsi que des données renseignant l’empreinte humaine à large échelle, j’étudie le devenir des communautés d’oiseaux communs en France et en Europe face aux perturbations anthropiques croissantes. Une partie de mon travail consiste donc à mettre en évidence la non-linéarité des dynamiques des populations aviaires ainsi que des pressions auxquelles elles sont soumises, et à relier pressions et réponses pour participer à comprendre l'érosion et la destruction de la biodiversité. Cette degradation n'affecte pas seulement les espèces, mais aussi les liens qui existent entre espèces et je m'intéresse par conséquent aussi aux changements qui affectent ces interdépendances elles-mêmes, en ayant recours à des analyses statistiques permettant d’estimer interactions et associations entre espèces, dans le temps et l’espace.
+
+Le déclin de la biodiversité est certes important et les causes sous-jacentes sont en partie identifiées, mais il y a un grand pas entre l'identification des failles du système socio-économique actuel et l'esquisse d'un autre modèle qui ne soit plus destructeur de la nature. Ce domaine de recherche correspond au second pôle de mon travail et me semble donc prioritaire pour enrayer efficacement l'érosion de la biodiversité, ce qui nécessite des propositions concrètes et étayées pour orienter les politiques publiques afin de faire évoluer les sociétés, notamment occidentales, vers des modèles plus durables. Il y a deux axes majeurs ici, le premier est de réussir à identifier les stratégies de luttes qui se sont montrées efficaces pour la préservation de la nature face au modèle destructeur, et le second de modéliser les conséquences que pourrait avoir un changement de paradigme socio-économique, en particulier la mise en place d'une société décroissante, sur le devenir de la biodiversité.
 
 :::
 

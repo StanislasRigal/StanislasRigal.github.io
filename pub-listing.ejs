@@ -44,7 +44,7 @@
   const hasData     = !!(item.data         && item.data         !== "");
   const hasSup      = !!(item.supplemental && item.supplemental !== "");
 
-  const internalTags = ["selected", "peer-reviewed", "highly-cited", "hot-paper"];
+  const internalTags = ["thesis", "peer-reviewed", "book", "newspaper"];
   const visibleTags  = catsArr.filter(function(c){ return internalTags.indexOf(c) === -1; });
 
   const isoDate = item.date

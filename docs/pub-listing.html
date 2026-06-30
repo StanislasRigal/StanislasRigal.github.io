@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Gang He">
 <meta name="description" content="Information, PDFs, and social metrics of papers">
 
-<title>Publications – Quarto Academic</title>
+<title>Publications – Stanislas Rigal</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -43,10 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-346337e101949f30c9d2a2307ffdd10b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5b27cb940f0c1521aad414060e924fb7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -78,20 +78,48 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-selected-work .list');
+    const listingTargetEl = window.document.querySelector('#listing-thesis .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-section','listing-authors','listing-year','listing-date','listing-title','listing-journal','listing-volume','listing-pages','listing-doi','listing-preprint','listing-shareit','listing-github','listing-data','listing-highlycited','listing-hotpaper','listing-awards','listing-mediacoverage','listing-invitedpresentation','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-section','listing-authors','listing-year','listing-title','listing-doi',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-section","listing-authors","listing-year","listing-date","listing-title","listing-journal","listing-volume","listing-pages","listing-doi","listing-preprint","listing-shareit","listing-github","listing-data","listing-highlycited","listing-hotpaper","listing-awards","listing-mediacoverage","listing-invitedpresentation","listing-categories"],
+      searchColumns: ["listing-section","listing-authors","listing-year","listing-title","listing-doi"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-selected-work'] = new List('listing-selected-work', options);
+    window['quarto-listings']['listing-thesis'] = new List('listing-thesis', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-newspaper .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-section','listing-authors','listing-year','listing-title','listing-journal',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-section","listing-authors","listing-year","listing-title","listing-journal"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-newspaper'] = new List('listing-newspaper', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -113,9 +141,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-section','listing-authors','listing-year','listing-date','listing-title','listing-journal','listing-volume','listing-issue','listing-pages','listing-doi','listing-pdf','listing-supplemental','listing-github','listing-highlycited','listing-mediacoverage','listing-invitedpresentation','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-section','listing-authors','listing-year','listing-title','listing-journal','listing-volume','listing-issue','listing-doi','listing-highlycited','listing-pages',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-section","listing-authors","listing-year","listing-date","listing-title","listing-journal","listing-volume","listing-issue","listing-pages","listing-doi","listing-pdf","listing-supplemental","listing-github","listing-highlycited","listing-mediacoverage","listing-invitedpresentation","listing-categories"],
+      searchColumns: ["listing-section","listing-authors","listing-year","listing-title","listing-journal","listing-volume","listing-issue","listing-doi","listing-highlycited","listing-pages"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -194,12 +222,12 @@ window.Quarto = {
 
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="pub-listing.css">
-<meta property="og:title" content="Publications – Quarto Academic">
-<meta property="og:description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
+<meta property="og:title" content="Publications – Stanislas Rigal">
+<meta property="og:description" content="Personal page">
 <meta property="og:image" content="https://quarto.org/quarto.png">
-<meta property="og:site_name" content="Quarto Academic">
-<meta name="twitter:title" content="Publications – Quarto Academic">
-<meta name="twitter:description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
+<meta property="og:site_name" content="Stanislas Rigal">
+<meta name="twitter:title" content="Publications – Stanislas Rigal">
+<meta name="twitter:description" content="Personal page">
 <meta name="twitter:image" content="https://quarto.org/quarto.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -212,7 +240,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Quarto Academic</span>
+    <span class="navbar-title">Stanislas Rigal</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -227,12 +255,8 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=news">
- <span class="dropdown-text">News</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./posts.html#category=event">
- <span class="dropdown-text">Events</span></a>
+    <a class="dropdown-item" href="./teaching.html">
+ <span class="dropdown-text">CV</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./contact.html">
@@ -247,15 +271,7 @@ window.Quarto = {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
         <li>
     <a class="dropdown-item" href="./pub-listing.html">
- <span class="dropdown-text">Publications Listing</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./publications.html">
  <span class="dropdown-text">Publications</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./posts.html#category=paper">
- <span class="dropdown-text">Selected Papers</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./projects.html">
@@ -263,25 +279,6 @@ window.Quarto = {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
-<span class="menu-text">Teaching</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outreach" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Outreach</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-outreach">    
-        <li>
-    <a class="dropdown-item" href="./posts.html#category=presentation">
- <span class="dropdown-text">Presentations</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
-<span class="menu-text">Group</span></a>
-  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -289,16 +286,7 @@ window.Quarto = {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/drganghe/quarto-academic-website-template" target="_blank"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://bsky.app" target="_blank"> 
-<span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="https://github.com/StanislasRigal" target="_blank"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -323,11 +311,12 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#selected-work" id="toc-selected-work" class="nav-link active" data-scroll-target="#selected-work">Selected Work</a></li>
-  <li><a href="#peer-reviewed-journal-papers" id="toc-peer-reviewed-journal-papers" class="nav-link" data-scroll-target="#peer-reviewed-journal-papers">Peer-reviewed Journal Papers</a></li>
+  <li><a href="#peer-review-papers" id="toc-peer-review-papers" class="nav-link active" data-scroll-target="#peer-review-papers">Peer-review papers</a></li>
+  <li><a href="#thesis" id="toc-thesis" class="nav-link" data-scroll-target="#thesis">Thesis</a></li>
+  <li><a href="#newspaper-articles" id="toc-newspaper-articles" class="nav-link" data-scroll-target="#newspaper-articles">Newspaper articles</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="MjAyMA==">2020 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="MjAyMg==">2022 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YXdhcmQ=">award <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2hpbmE=">china <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z2VybWFueQ==">germany <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aGlnaGx5LWNpdGVk">highly-cited <span class="quarto-category-count">(2)</span></div><div class="category" data-category="aG90LXBhcGVy">hot-paper <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmF0dXJlLXNlcmllcw==">nature-series <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cGVlci1yZXZpZXdlZA==">peer-reviewed <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cG93ZXItc3lzdGVt">power-system <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2VsZWN0ZWQ=">selected <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c29sYXI=">solar <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c3RvcmFnZQ==">storage <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3VwcGx5LWNoYWlu">supply-chain <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3dpdGNoLWNoaW5h">switch-china <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dW5pdGVkLXN0YXRlcw==">united-states <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d2luZA==">wind <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(20)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -350,6 +339,10 @@ window.Quarto = {
 </header>
 
 
+<p>Total citations as of June 2026:</p>
+<ul>
+<li><a href="https://scholar.google.fr/citations?user=mLe9EecAAAAJ&amp;hl=fr&amp;oi=ao">Google Scholar</a>: 776 (h-index = 10, i10-index = 10)</li>
+</ul>
 <!-- 
 Load Academicons v1: https://jpswalsh.github.io/academicons/
 -->
@@ -363,64 +356,271 @@ https://badge.dimensions.ai/
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 <script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
-<p>Note: * corresponding author; <img src="https://drganghe.github.io/files/images/highly-cited-paper-badge.png" title="ESI Highly Cited Paper" class="img-fluid" alt="Highly cited paper" width="20"> ESI <a href="https://webofscience.help.clarivate.com/en-us/Content/esi-highly-cited-papers.html">Highly Cited Paper</a> (top 1%); <img src="https://drganghe.github.io/files/images/hot-paper-badge.png" title="ESI Hot Paper" class="img-fluid" alt="Hot paper" width="20"> ESI <a href="https://webofscience.help.clarivate.com/en-us/Content/esi-hot-papers.html">Hot Paper</a> (top 0.1%)</p>
-<section id="selected-work" class="level2">
-<h2 class="anchored" data-anchor-id="selected-work">Selected Work</h2>
-<div id="listing-selected-work" class="quarto-listing quarto-listing-container-custom">
+<section id="peer-review-papers" class="level2">
+<h2 class="anchored" data-anchor-id="peer-review-papers">Peer-review papers</h2>
+<div id="listing-peer-reviewed" class="quarto-listing quarto-listing-container-custom">
 <div class="pub-listing list">
-<div class="pub-item" data-index="0" data-categories="MjAyMiUyQ3NlbGVjdGVkJTJDcGVlci1yZXZpZXdlZCUyQ2F3YXJkJTJDaGlnaGx5LWNpdGVkJTJDaG90LXBhcGVyJTJDbmF0dXJlLXNlcmllcyUyQ3N1cHBseS1jaGFpbiUyQ3NvbGFyJTJDdW5pdGVkLXN0YXRlcyUyQ2NoaW5hJTJDZ2VybWFueQ==" data-listing-date-sort="1666756800000">
-<p><span class="listing-title d-none">Quantifying the Cost Savings of Global Solar Photovoltaic Supply Chains</span> <span class="listing-author d-none">Helveston, John, <strong>Gang He</strong>*, and Michael Davidson</span> <span class="listing-date d-none">Oct 26, 2022</span></p>
+<div class="pub-item" data-index="0">
+<p><span class="listing-title d-none">Tracking changes in birds' interaction milieu</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
-<pre><code>&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('MjAyMg=='); return false;"&gt;2022&lt;/span&gt;
 
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c2VsZWN0ZWQ='); return false;"&gt;selected&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('cGVlci1yZXZpZXdlZA=='); return false;"&gt;peer-reviewed&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('YXdhcmQ='); return false;"&gt;award&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('aGlnaGx5LWNpdGVk'); return false;"&gt;highly-cited&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('aG90LXBhcGVy'); return false;"&gt;hot-paper&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('bmF0dXJlLXNlcmllcw=='); return false;"&gt;nature-series&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c3VwcGx5LWNoYWlu'); return false;"&gt;supply-chain&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c29sYXI='); return false;"&gt;solar&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('dW5pdGVkLXN0YXRlcw=='); return false;"&gt;united-states&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('Y2hpbmE='); return false;"&gt;china&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('Z2VybWFueQ=='); return false;"&gt;germany&lt;/span&gt;</code></pre>
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Helveston, John, <strong>Gang He</strong>*, and Michael Davidson</span>. <span class="pub-year">2022</span>. <a href="https://drganghe.github.io/posts/2022-10-nature-cost-savings-of-global-solar-pv-value-chains/index.html" class="pub-title">Quantifying the Cost Savings of Global Solar Photovoltaic Supply Chains</a>. <em class="pub-journal">Nature</em> 612: 83-87. doi: <a href="https://doi.org/10.1038/s41586-022-05316-6" target="_blank" rel="noopener" class="pub-doi">10.1038/s41586-022-05316-6</a>. <img src="https://drganghe.github.io/files/images/highly-cited-paper-badge.png" title="ESI Highly Cited Paper" alt="Highly cited paper" width="20" style="vertical-align:middle;"> <img src="https://drganghe.github.io/files/images/hot-paper-badge.png" title="ESI Hot Paper" alt="Hot paper" width="20" style="vertical-align:middle;">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span>. <span class="pub-year">2026</span>. <a href="https://peercommunityjournal.org/articles/10.24072/pcjournal.730/" class="pub-title">Tracking changes in birds' interaction milieu</a>. <em class="pub-journal">Peer Community Journal</em> 6(2804-3871). doi: <a href="https://doi.org/10.24072/pcjournal.730" target="_blank" rel="noopener" class="pub-doi">10.24072/pcjournal.730</a>.
 </p>
 <p class="pub-links">
-<a href="https://drganghe.github.io/files/papers/2022-nature-solar-supply-chains-preprint.pdf" class="pub-btn btn-preprint" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text"></i> Preprint</a> <a href="https://rdcu.be/enuBz" class="pub-btn btn-shareit" target="_blank" rel="noopener"><i class="bi bi-share"></i> SharedIt</a> <a href="https://github.com/jhelvy/solar-learning-2021" class="pub-btn btn-github" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a> <a href="https://doi.org/10.5281/zenodo.6989075" class="pub-btn btn-data" target="_blank" rel="noopener"><i class="bi bi-database"></i> Data</a> <span class="__dimensions_badge_embed__" data-doi="10.1038/s41586-022-05316-6" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1038/s41586-022-05316-6" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+<span class="__dimensions_badge_embed__" data-doi="10.24072/pcjournal.730" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.24072/pcjournal.730" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
-<p class="pub-awards">
-<span class="pub-label"><i class="bi bi-trophy"></i> Award:</span> <a href="https://drganghe.github.io/posts/2022-12-iamc-2022-best-poster-award/index.html">IAMC2022 Best Poster Award</a>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="1">
+<p><span class="listing-title d-none">Alarming conservation status of Western European steppe birds and their habitats: An expert-based review of current threats, traits and knowledge gaps</span> <span class="listing-author d-none">Gómez-Catasús, Julia and Benítez-López, Ana and Díaz, Mario and González del Portillo, David and Pérez-Granados, Cristian and Alonso, Juan Carlos and Arroyo, Beatriz and Abril-Colón, Inmaculada and Barrero, Adrián and Barrientos, Rafael and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Brotons, Lluís and Bustillo-de la Rosa, Daniel and Cabodevilla, Xabier and Carrascal, Luis M. and Carricondo, Ana and Casas, Fabián and Catry, Inês and Crispim-Mendes, Tiago and Erciyas-Yavuz, Kiraz and Galván, Ismael and Gameiro, João and García, Jesús T. and Giralt, David and Illera, Juan Carlos and Leiva, Antonio and López-Iborra, Germán M. and Mañosa, Santi and Marques, Ana T. and Martín, Carlos A. and Medrano-Vizcaíno, Pablo and Morales, Manuel B. and Moreira, Francisco and Mougeot, François and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Oñate-Casado, Javier and Palacín, Carlos and Pearce-Higgins, James W. and Petrusková, Tereza and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Sanz-Pérez, Ana and Seoane, Javier and Serrano, David and Silva, João Paulo and Tarjuelo, Rocío and Traba, Juan and Tryjanowski, Piotr and Ucero, Alberto and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Başkent, Emin Zeki and Zurdo, Julia and Bravo, Carolina</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Gómez-Catasús, Julia and Benítez-López, Ana and Díaz, Mario and González del Portillo, David and Pérez-Granados, Cristian and Alonso, Juan Carlos and Arroyo, Beatriz and Abril-Colón, Inmaculada and Barrero, Adrián and Barrientos, Rafael and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Brotons, Lluís and Bustillo-de la Rosa, Daniel and Cabodevilla, Xabier and Carrascal, Luis M. and Carricondo, Ana and Casas, Fabián and Catry, Inês and Crispim-Mendes, Tiago and Erciyas-Yavuz, Kiraz and Galván, Ismael and Gameiro, João and García, Jesús T. and Giralt, David and Illera, Juan Carlos and Leiva, Antonio and López-Iborra, Germán M. and Mañosa, Santi and Marques, Ana T. and Martín, Carlos A. and Medrano-Vizcaíno, Pablo and Morales, Manuel B. and Moreira, Francisco and Mougeot, François and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Oñate-Casado, Javier and Palacín, Carlos and Pearce-Higgins, James W. and Petrusková, Tereza and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Sanz-Pérez, Ana and Seoane, Javier and Serrano, David and Silva, João Paulo and Tarjuelo, Rocío and Traba, Juan and Tryjanowski, Piotr and Ucero, Alberto and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Başkent, Emin Zeki and Zurdo, Julia and Bravo, Carolina</span>. <span class="pub-year">2025</span>. <a href="https://www.sciencedirect.com/science/article/pii/S0006320725004513?via%3Dihub" class="pub-title">Alarming conservation status of Western European steppe birds and their habitats: An expert-based review of current threats, traits and knowledge gaps</a>. <em class="pub-journal">Biological Conservation</em> 311. doi: <a href="https://doi.org/10.1016/j.biocon.2025.111414" target="_blank" rel="noopener" class="pub-doi">10.1016/j.biocon.2025.111414</a>.
 </p>
-<p class="pub-coverage">
-<span class="pub-label">Coverage:</span> <a href="https://news.stonybrook.edu/environmental-stewardship/international-collaboration-is-key-to-addressing-global-climate-change/">SBU News</a> | <a href="https://mediarelations.gwu.edu/global-collaboration-saved-countries-67-billion-solar-panel-production-costs">GWU News</a> | <a href="https://today.ucsd.edu/story/open-trade-saves-countries-billions-in-solar-panel-production">UCSD News</a> | <a href="https://web.archive.org/web/20230603073317/https://www.natureasia.com/en/research/highlight/14262"><em>Nature</em> Research Highlights</a> | <a href="https://www.eenews.net/articles/how-bidens-made-in-america-solar-strategy-may-backfire/"><em>E&amp;E News</em></a> | <a href="https://foreignpolicy.com/2023/09/21/us-china-climate-cooperation-trade-ira-green-technology/"><em>Foreign Policy</em></a> | <a href="https://web.archive.org/web/20240106093827/https://themessenger.com/grid/the-us-is-reducing-its-reliance-on-china-for-green-technology-could-that-slow-progress-on-climate-change">GRID News</a> | <a href="https://pv-magazine-usa.com/2022/10/26/a-globalized-supply-chain-is-key-to-cutting-costs-in-solar-module-manufacturing/">PV Magazine</a> | <a href="https://dot.la/deglobalization-2658510850.html">dot.LA</a> | <a href="https://pvbuzz.com/new-study-quantifies-cost-savings-solar-industry-globalized-supply-chains/">pvbuzz</a> | <a href="https://www.innovateli.com/no-736-on-immigrants-solar-energy-supplies-and-other-american-strengths-with-lots-of-candy-to-share/">InnovateLongIsland</a> | <a href="https://mercomindia.com/imposing-import-tariffs-hamper-of-solar-energy-study/">Mercom India</a> | <a href="https://www.chinanews.com.cn/cj/2022/10-27/9881042.shtml">China News</a> | <a href="http://www.stdaily.com/index/kejixinwen/202210/e38ea5c3a3054d87a43996d39a2924ab.shtml">Science and Technology Daily</a>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.biocon.2025.111414" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.biocon.2025.111414" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
-<p class="pub-presentations">
-<span class="pub-label">Invited presentation:</span> <a href="https://cese.pku.edu.cn/images/content/2024-03/20240325151929637875.png">Peking University</a> | <a href="https://mp.weixin.qq.com/s/c_Z0RHwzkjziq-QvdUzs-g">Tsinghua University</a> | <a href="https://www.belfercenter.org/event/energy-policy-seminar-michael-davidson-decoupling-china-clean-tech">Harvard University</a> (M.D.) | ITIF (J.H.) | <a href="https://mp.weixin.qq.com/s/teDhroPPbaA6z1pVU2JrwA">Climate Change Economics Forum</a>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="2">
+<p><span class="listing-title d-none">Pesticides in France: ten years of combined exposure to active substances in land, air and surface water</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Perrot, Thomas</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Perrot, Thomas</span>. <span class="pub-year">2025</span>. <a href="https://www.nature.com/articles/s41597-025-04864-6" class="pub-title">Pesticides in France: ten years of combined exposure to active substances in land, air and surface water</a>. <em class="pub-journal">Scientific Data</em> 12(512). doi: <a href="https://doi.org/10.1038/s41597-025-04864-6" target="_blank" rel="noopener" class="pub-doi">10.1038/s41597-025-04864-6</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1038/s41597-025-04864-6" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1038/s41597-025-04864-6" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="3">
+<p><span class="listing-title d-none">The hidden dimension of low-carbon public transport policies</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Calvet, Coralie and Tardieu, Léa and Roussel, Sébastien and Vaissière, Anne-Charlotte</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Calvet, Coralie and Tardieu, Léa and Roussel, Sébastien and Vaissière, Anne-Charlotte</span>. <span class="pub-year">2025</span>. <a href="https://www.sciencedirect.com/science/article/pii/S092180092500151X" class="pub-title">The hidden dimension of low-carbon public transport policies</a>. <em class="pub-journal">Ecological Economics</em> 236(0921-8009). doi: <a href="https://doi.org/10.1016/j.ecolecon.2025.108668" target="_blank" rel="noopener" class="pub-doi">10.1016/j.ecolecon.2025.108668</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ecolecon.2025.108668" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.ecolecon.2025.108668" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="4">
+<p><span class="listing-title d-none">Key conservation actions for European steppes in the context of the Post-2020 Global Biodiversity Framework</span> <span class="listing-author d-none">Pérez-Granados, Cristian and Benítez-López, Ana and Díaz, Mario and Gameiro, João and Lenzner, Bernd and Roura-Pascual, Núria and Gómez-Catasús, Julia and Tarjuelo, Rocío and Barrero, Adrián and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Bravo, Carolina and Brotons, Lluís and la Rosa, Daniel Bustillo-de and Cabodevilla, Xabier and Búrdalo, Antonio Calvo and Carricondo, Ana and Casas, Fabián and Concepción, Elena D. and Constán-Nava, Soraya and Crispim-Mendes, Tiago and Giralt, David and Golivets, Marina and Latombe, Guillaume and Leiva, Antonio and López-Iborra, Germán M. and López-Poveda, Gabriel and Mañosa, Santi and Martín, Carlos A. and Morales, Manuel B. and Moreira, Francisco and Mougeot, Francois and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Jiménez, Gema Ruiz and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Santos, Carlos and Sanz-Pérez, Ana and Serrano, David and Silva, João Paulo and Torrijo, Antonio and Traba, Juan and Tryjanowski, Piotr and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Zurdo, Julia and Marques, Ana T.</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Pérez-Granados, Cristian and Benítez-López, Ana and Díaz, Mario and Gameiro, João and Lenzner, Bernd and Roura-Pascual, Núria and Gómez-Catasús, Julia and Tarjuelo, Rocío and Barrero, Adrián and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Bravo, Carolina and Brotons, Lluís and la Rosa, Daniel Bustillo-de and Cabodevilla, Xabier and Búrdalo, Antonio Calvo and Carricondo, Ana and Casas, Fabián and Concepción, Elena D. and Constán-Nava, Soraya and Crispim-Mendes, Tiago and Giralt, David and Golivets, Marina and Latombe, Guillaume and Leiva, Antonio and López-Iborra, Germán M. and López-Poveda, Gabriel and Mañosa, Santi and Martín, Carlos A. and Morales, Manuel B. and Moreira, Francisco and Mougeot, Francois and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Jiménez, Gema Ruiz and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Santos, Carlos and Sanz-Pérez, Ana and Serrano, David and Silva, João Paulo and Torrijo, Antonio and Traba, Juan and Tryjanowski, Piotr and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Zurdo, Julia and Marques, Ana T.</span>. <span class="pub-year">2025</span>. <a href="https://link.springer.com/article/10.1007/s11625-024-01602-6" class="pub-title">Key conservation actions for European steppes in the context of the Post-2020 Global Biodiversity Framework</a>. <em class="pub-journal">Sustainability Science</em> 20. doi: <a href="https://doi.org/10.1007/s11625-024-01602-6" target="_blank" rel="noopener" class="pub-doi">10.1007/s11625-024-01602-6</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1007/s11625-024-01602-6" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1007/s11625-024-01602-6" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="5">
+<p><span class="listing-title d-none">Assessing in-field pesticide effects under European regulation and its implications for biodiversity: a workshop report</span> <span class="listing-author d-none">Solé, Magali and Brendel, Stephan and Aldrich, Annette and Dauber, Jens and Ewald, Julie and Duquesne, Sabine and Gottschalk, Eckhard and Hoffmann, Jörg and Kuemmerlen, Mathias and Leake, Alastair and others</span> <span class="listing-date d-none">2024-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Solé, Magali and Brendel, Stephan and Aldrich, Annette and Dauber, Jens and Ewald, Julie and Duquesne, Sabine and Gottschalk, Eckhard and Hoffmann, Jörg and Kuemmerlen, Mathias and Leake, Alastair and others</span>. <span class="pub-year">2024</span>. <a href="https://link.springer.com/article/10.1186/s12302-024-00977-8" class="pub-title">Assessing in-field pesticide effects under European regulation and its implications for biodiversity: a workshop report</a>. <em class="pub-journal">Environmental Sciences Europe</em> 36(153). doi: <a href="https://doi.org/10.1186/s12302-024-00977-8" target="_blank" rel="noopener" class="pub-doi">10.1186/s12302-024-00977-8</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1186/s12302-024-00977-8" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1186/s12302-024-00977-8" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="6">
+<p><span class="listing-title d-none">Degrowth scenarios for biodiversity? Key methodological steps and a call for collaboration</span> <span class="listing-author d-none">Otero, Iago and <strong>Rigal, Stanislas</strong> and Pereira, Laura and Kim, HyeJin and Gamboa, Gonzalo and Tello, Enric and Gr{^e}t-Regamey, Adrienne</span> <span class="listing-date d-none">2024-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Otero, Iago and <strong>Rigal, Stanislas</strong> and Pereira, Laura and Kim, HyeJin and Gamboa, Gonzalo and Tello, Enric and Gr{^e}t-Regamey, Adrienne</span>. <span class="pub-year">2024</span>. <a href="https://link.springer.com/article/10.1007/s11625-024-01483-9" class="pub-title">Degrowth scenarios for biodiversity? Key methodological steps and a call for collaboration</a>. <em class="pub-journal">Sustainability Science</em>. doi: <a href="https://doi.org/10.1007/s11625-024-01483-9" target="_blank" rel="noopener" class="pub-doi">10.1007/s11625-024-01483-9</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1007/s11625-024-01483-9" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1007/s11625-024-01483-9" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="7">
+<p><span class="listing-title d-none">Investigating the heterogeneity within Wild bird indices in Europe</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span> <span class="listing-date d-none">2024-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span>. <span class="pub-year">2024</span>. <a href="https://www.sciencedirect.com/science/article/pii/S0006320724000132" class="pub-title">Investigating the heterogeneity within Wild bird indices in Europe</a>. <em class="pub-journal">Biological Conservation</em> 290. doi: <a href="https://doi.org/10.1016/j.biocon.2024.110452" target="_blank" rel="noopener" class="pub-doi">10.1016/j.biocon.2024.110452</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.biocon.2024.110452" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.biocon.2024.110452" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="8">
+<p><span class="listing-title d-none">Farmland practices are driving bird population decline across Europe</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Dakos, Vasilis and Alonso, Hany and Auniņš, Ainārs and Benkő, Zoltán and Brotons, Lluís and Chodkiewicz, Tomasz and Chylarecki, Przemysław and De Carli, Elisabetta and Del Moral, Juan Carlos and Domşa, Cristian and Escandell, Virginia and Fontaine, Benoît and Foppen, Ruud and Gregory, Richard and Harris, Sarah and Herrando, Sergi and Husby, Magne and Ieronymidou, Christina and Jiguet, Frédéric and Kennedy, John and Klvaňová, Alena and Kmecl, Primož and Kuczyński, Lechosław and Kurlavičius, Petras and Kålås, John Atle and Lehikoinen, Aleksi and Lindström, Åke and Lorrillière, Romain and Moshøj, Charlotte and Nellis, Renno and Noble, David and Eskildsen, Daniel Palm and Paquet, Jean-Yves and Pélissié, Mathieu and Pladevall, Clara and Portolou, Danae and Reif, Jiří and Schmid, Hans and Seaman, Benjamin and Szabo, Zoltán D. and Szép, Tibor and Florenzano, Guido Tellini and Teufelbauer, Norbert and Trautmann, Sven and Van Turnhout, Chris and Vermouzek, Zdeněk and Vikstrøm, Thomas and Voříšek, Petr and Weiserbs, Anne and Devictor, Vincent</span> <span class="listing-date d-none">2023-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Dakos, Vasilis and Alonso, Hany and Auniņš, Ainārs and Benkő, Zoltán and Brotons, Lluís and Chodkiewicz, Tomasz and Chylarecki, Przemysław and De Carli, Elisabetta and Del Moral, Juan Carlos and Domşa, Cristian and Escandell, Virginia and Fontaine, Benoît and Foppen, Ruud and Gregory, Richard and Harris, Sarah and Herrando, Sergi and Husby, Magne and Ieronymidou, Christina and Jiguet, Frédéric and Kennedy, John and Klvaňová, Alena and Kmecl, Primož and Kuczyński, Lechosław and Kurlavičius, Petras and Kålås, John Atle and Lehikoinen, Aleksi and Lindström, Åke and Lorrillière, Romain and Moshøj, Charlotte and Nellis, Renno and Noble, David and Eskildsen, Daniel Palm and Paquet, Jean-Yves and Pélissié, Mathieu and Pladevall, Clara and Portolou, Danae and Reif, Jiří and Schmid, Hans and Seaman, Benjamin and Szabo, Zoltán D. and Szép, Tibor and Florenzano, Guido Tellini and Teufelbauer, Norbert and Trautmann, Sven and Van Turnhout, Chris and Vermouzek, Zdeněk and Vikstrøm, Thomas and Voříšek, Petr and Weiserbs, Anne and Devictor, Vincent</span>. <span class="pub-year">2023</span>. <a href="https://www.pnas.org/doi/10.1073/pnas.2216573120" class="pub-title">Farmland practices are driving bird population decline across Europe</a>. <em class="pub-journal">PNAS</em> 120(21). doi: <a href="https://doi.org/10.1073/pnas.2216573120" target="_blank" rel="noopener" class="pub-doi">10.1073/pnas.2216573120</a>. <img src="https://drganghe.github.io/files/images/highly-cited-paper-badge.png" title="ESI Highly Cited Paper" alt="Highly cited paper" width="20" style="vertical-align:middle;">
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1073/pnas.2216573120" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1073/pnas.2216573120" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="9">
+<p><span class="listing-title d-none">A toolbox to explore the composition of species dynamics behind multi-species indices</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span> <span class="listing-date d-none">2023-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span>. <span class="pub-year">2023</span>. <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.14117" class="pub-title">A toolbox to explore the composition of species dynamics behind multi-species indices</a>. <em class="pub-journal">Methods in Ecology and Evolution</em> 14(2041-210X). doi: <a href="https://doi.org/10.1111/2041-210X.14117" target="_blank" rel="noopener" class="pub-doi">10.1111/2041-210X.14117</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1111/2041-210X.14117" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1111/2041-210X.14117" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="10">
+<p><span class="listing-title d-none">Social-environmental index: combining social and biophysical indicators reveals limits to growth</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong></span> <span class="listing-date d-none">2022-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong></span>. <span class="pub-year">2022</span>. <a href="https://ecologyandsociety.org/vol27/iss2/art33/" class="pub-title">Social-environmental index: combining social and biophysical indicators reveals limits to growth</a>. <em class="pub-journal">Ecology and Society</em> 27(2). doi: <a href="https://doi.org/10.5751/ES-13238-270233" target="_blank" rel="noopener" class="pub-doi">10.5751/ES-13238-270233</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.5751/ES-13238-270233" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.5751/ES-13238-270233" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="11">
+<p><span class="listing-title d-none">Biotic homogenisation in bird communities leads to large-scale changes in species associations</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Gaüzère, Pierre and Kéfi, Sonia and Forsman, Jukka T. and Kajanus, Mira H. and Mönkkönen, Mikko and Dakos, Vasilis</span> <span class="listing-date d-none">2022-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Gaüzère, Pierre and Kéfi, Sonia and Forsman, Jukka T. and Kajanus, Mira H. and Mönkkönen, Mikko and Dakos, Vasilis</span>. <span class="pub-year">2022</span>. <a href="https://nsojournals.onlinelibrary.wiley.com/doi/pdf/10.1111/oik.08756" class="pub-title">Biotic homogenisation in bird communities leads to large-scale changes in species associations</a>. <em class="pub-journal">Oikos</em> 2022(1600-0706). doi: <a href="https://doi.org/10.1111/oik.08756" target="_blank" rel="noopener" class="pub-doi">10.1111/oik.08756</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1111/oik.08756" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1111/oik.08756" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="12">
+<p><span class="listing-title d-none">A method for classifying and comparing non-linear trajectories of ecological variables</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span> <span class="listing-date d-none">2020-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span>. <span class="pub-year">2020</span>. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1470160X20300509" class="pub-title">A method for classifying and comparing non-linear trajectories of ecological variables</a>. <em class="pub-journal">Ecological Indicators</em> 112(1470-160X). doi: <a href="https://doi.org/10.1016/j.ecolind.2020.106113" target="_blank" rel="noopener" class="pub-doi">10.1016/j.ecolind.2020.106113</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ecolind.2020.106113" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.ecolind.2020.106113" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="13">
+<p><span class="listing-title d-none">New prehistoric avifaunas from the Gambier Group, French Polynesia</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Kirch, Patrick and Worthy, Trevor</span> <span class="listing-date d-none">2018-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Kirch, Patrick and Worthy, Trevor</span>. <span class="pub-year">2018</span>. <a href="https://palaeo-electronica.org/content/2018/2360-gambier-group-fossil-avifaunas" class="pub-title">New prehistoric avifaunas from the Gambier Group, French Polynesia</a>. <em class="pub-journal">Palaeontologia Electronica</em> 21(3). doi: <a href="https://doi.org/10.26879/892" target="_blank" rel="noopener" class="pub-doi">10.26879/892</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.26879/892" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.26879/892" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="14">
+<p><span class="listing-title d-none">A new pterosaur specimen from the Upper Tunbridge Wells Sand Formation (Cretaceous, Valanginian) of southern England and a review of Lonchodectes sagittirostris (Owen 1874)</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Martill, David M and Sweetman, Steven C</span> <span class="listing-date d-none">2018-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Martill, David M and Sweetman, Steven C</span>. <span class="pub-year">2018</span>. <a href="https://chooser.crossref.org/?doi=10.1144%2FSP455.5" class="pub-title">A new pterosaur specimen from the Upper Tunbridge Wells Sand Formation (Cretaceous, Valanginian) of southern England and a review of Lonchodectes sagittirostris (Owen 1874)</a>. <em class="pub-journal">Geological Society, London, Special Publications</em> 455(1): 221-232. doi: <a href="https://doi.org/10.1144/SP455.5" target="_blank" rel="noopener" class="pub-doi">10.1144/SP455.5</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1144/SP455.5" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1144/SP455.5" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="15">
+<p><span class="listing-title d-none">On the rarity of anterior teeth of Asteracanthus magnus (Euselachii: Hybodontiformes)</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Cuny, Gilles</span> <span class="listing-date d-none">2016-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Cuny, Gilles</span>. <span class="pub-year">2016</span>. <a href="https://www.schweizerbart.de/papers/njgpa/detail/279/85425/On_the_rarity_of_anterior_teeth_of_Asteracanthus_m?af=crossref" class="pub-title">On the rarity of anterior teeth of Asteracanthus magnus (Euselachii: Hybodontiformes)</a>. <em class="pub-journal">Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen</em> 279(1). doi: <a href="https://doi.org/10.1127/njgpa/2016/0538" target="_blank" rel="noopener" class="pub-doi">10.1127/njgpa/2016/0538</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1127/njgpa/2016/0538" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1127/njgpa/2016/0538" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+
+</div>
+</section>
+<section id="thesis" class="level2">
+<h2 class="anchored" data-anchor-id="thesis">Thesis</h2>
+<div id="listing-thesis" class="quarto-listing quarto-listing-container-custom">
+<div class="pub-listing list">
+<div class="pub-item" data-index="0">
+<p><span class="listing-title d-none">Tout est lié : Réponses complexes de la biodiversité aux changements globaux et déterminants socio-économiques</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong></span> <span class="listing-date d-none">2021-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong></span>. <span class="pub-year">2021</span>. <a href="https://theses.fr/2021MONTG048" class="pub-title">Tout est lié : Réponses complexes de la biodiversité aux changements globaux et déterminants socio-économiques</a>. doi: <a href="https://doi.org/10.70675/e0f497fcz3292z456eza1aez6afaaf44b910" target="_blank" rel="noopener" class="pub-doi">10.70675/e0f497fcz3292z456eza1aez6afaaf44b910</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.70675/e0f497fcz3292z456eza1aez6afaaf44b910" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.70675/e0f497fcz3292z456eza1aez6afaaf44b910" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+<div class="hidden quarto-markdown-envelope-contents" data-render-id="cGlwZWxpbmUtbGlzdGluZy1uZXdzcGFwZXI=">
+<div class="pub-listing list">
+<div class="pub-item" data-index="0">
+<p><span class="listing-title d-none">« Non, la décroissance n’est pas un concept flou » : dix économistes répondent à Jean Pisani-Ferry</span> <span class="listing-author d-none">Collectif</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Collectif</span>. <span class="pub-year">2025</span>. <a href="https://www.lemonde.fr/idees/article/2025/07/05/non-la-decroissance-n-est-pas-un-concept-flou-dix-economistes-repondent-a-jean-pisani-ferry_6618660_3232.html" class="pub-title">« Non, la décroissance n’est pas un concept flou » : dix économistes répondent à Jean Pisani-Ferry</a>. <em class="pub-journal">Le Monde</em>.
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="1">
+<p><span class="listing-title d-none">Les oiseaux, victimes collatérales de l’intensiﬁcation agricole en Europe</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Devictor, Vincent</span> <span class="listing-date d-none">2024-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Devictor, Vincent</span>. <span class="pub-year">2024</span>. <a href="https://theconversation.com/les-oiseaux-victimes-collaterales-de-lintensification-agricole-en-europe-223495" class="pub-title">Les oiseaux, victimes collatérales de l’intensiﬁcation agricole en Europe</a>. <em class="pub-journal">The Conversation</em>.
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="2">
+<p><span class="listing-title d-none">« S’il y a un ennemi à la nature, c’est le capitalisme extractiviste et productiviste »</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong></span> <span class="listing-date d-none">2020-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong></span>. <span class="pub-year">2020</span>. <a href="https://www.lemonde.fr/idees/article/2020/11/27/s-il-y-a-un-ennemi-a-la-nature-c-est-le-capitalisme-extractiviste-et-productiviste_6061307_3232.html" class="pub-title">« S’il y a un ennemi à la nature, c’est le capitalisme extractiviste et productiviste »</a>. <em class="pub-journal">Le Monde</em>.
 </p>
 <hr class="pub-divider">
 </div>
@@ -428,114 +628,474 @@ https://badge.dimensions.ai/
 <div class="listing-no-matching d-none">No matching items</div>
 <div class="hidden quarto-markdown-envelope-contents" data-render-id="cGlwZWxpbmUtbGlzdGluZy1wZWVyLXJldmlld2Vk">
 <div class="pub-listing list">
-<div class="pub-item" data-index="0" data-categories="MjAyMCUyQ3NlbGVjdGVkJTJDcGVlci1yZXZpZXdlZCUyQ2hpZ2hseS1jaXRlZCUyQ25hdHVyZS1zZXJpZXMlMkNwb3dlci1zeXN0ZW0lMkNzd2l0Y2gtY2hpbmElMkNzb2xhciUyQ3dpbmQlMkNzdG9yYWdl" data-listing-date-sort="1589515200000">
-<p><span class="listing-title d-none">Rapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System</span> <span class="listing-author d-none"><strong>He, Gang</strong>*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke*</span> <span class="listing-date d-none">May 15, 2020</span></p>
+<div class="pub-item" data-index="0">
+<p><span class="listing-title d-none">Tracking changes in birds' interaction milieu</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
-<pre><code>&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('MjAyMA=='); return false;"&gt;2020&lt;/span&gt;
 
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c2VsZWN0ZWQ='); return false;"&gt;selected&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('cGVlci1yZXZpZXdlZA=='); return false;"&gt;peer-reviewed&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('aGlnaGx5LWNpdGVk'); return false;"&gt;highly-cited&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('bmF0dXJlLXNlcmllcw=='); return false;"&gt;nature-series&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('cG93ZXItc3lzdGVt'); return false;"&gt;power-system&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c3dpdGNoLWNoaW5h'); return false;"&gt;switch-china&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c29sYXI='); return false;"&gt;solar&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('d2luZA=='); return false;"&gt;wind&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c3RvcmFnZQ=='); return false;"&gt;storage&lt;/span&gt;</code></pre>
 </div>
 <p class="pub-citation">
-<span class="pub-authors"><strong>He, Gang</strong>*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke*</span>. <span class="pub-year">2020</span>. <a href="https://drganghe.github.io/posts/2020-05-ncomms-rapid-re-cost/index.html" class="pub-title">Rapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System</a>. <em class="pub-journal">Nature Communications</em> 11(1): 2486. doi: <a href="https://doi.org/10.1038/s41467-020-16184-x" target="_blank" rel="noopener" class="pub-doi">10.1038/s41467-020-16184-x</a>. <img src="https://drganghe.github.io/files/images/highly-cited-paper-badge.png" title="ESI Highly Cited Paper" alt="Highly cited paper" width="20" style="vertical-align:middle;">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span>. <span class="pub-year">2026</span>. <a href="https://peercommunityjournal.org/articles/10.24072/pcjournal.730/" class="pub-title">Tracking changes in birds' interaction milieu</a>. <em class="pub-journal">Peer Community Journal</em> 6(2804-3871). doi: <a href="https://doi.org/10.24072/pcjournal.730" target="_blank" rel="noopener" class="pub-doi">10.24072/pcjournal.730</a>.
 </p>
 <p class="pub-links">
-<a href="https://www.nature.com/articles/s41467-020-16184-x.pdf" class="pub-btn btn-pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> PDF</a> <a href="https://github.com/switch-model/switch-china-open-model" class="pub-btn btn-github" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a> <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-16184-x/MediaObjects/41467_2020_16184_MOESM1_ESM.pdf" class="pub-btn btn-supplemental" target="_blank" rel="noopener"><i class="bi bi-paperclip"></i> Supplemental</a> <span class="__dimensions_badge_embed__" data-doi="10.1038/s41467-020-16184-x" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1038/s41467-020-16184-x" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
-</p>
-<p class="pub-coverage">
-<span class="pub-label">Coverage:</span> <a href="https://news.stonybrook.edu/newsroom/study-shows-decrease-in-renewable-energy-costs-may-serve-as-an-accelerator-for-clean-energy-expansion/">SBU News</a> | <a href="https://eta.lbl.gov/news/falling-prices-could-accelerate-china">LBL News</a> | <a href="https://www.carbonbrief.org/guest-post-chinas-power-sector-could-be-10-per-cent-cheaper-in-2030-with-more-renewables"><em>Carbon Brief</em> Headline</a> | <a href="https://insideclimatenews.org/news/04062020/inside-clean-energy-arkansas-rooftop-solar/"><em>InsideClimateNews</em></a> | <a href="https://subscriber.politicopro.com/article/eenews/1063354565"><em>E&amp;E News</em>/<em>ClimateWire</em></a> | <a href="https://www.forbes.com/sites/energyinnovation/2020/08/10/plummeting-renewable-energy-battery-prices-mean-china-could-hit-62-clean-power-and-cut-costs-11-by-2030/?sh=29fa3f2f1519"><em>Forbes</em></a> | <a href="https://www.nature.com/articles/d41586-020-02927-9"><em>Nature</em> News</a>
-</p>
-<p class="pub-presentations">
-<span class="pub-label">Invited presentation:</span> <a href="https://aperc.or.jp/presentations/event_detail.php?article_info__id=388">Asia Pacific Energy Research Centre (APERC) Annual Conference 2020</a> | <a href="https://ceep.bit.edu.cn/xzhd/xshdyg/8c8df4e81437434fb80b7ebb8d973b4c.htm">Beijing Institute of Technology</a> | Dartmouth College | <a href="https://growthlab.hks.harvard.edu/event/research-seminar-achieving-power-sector-carbon-neutrality-in-a-low-cost-renewable-era/">Harvard Kennedy School Growth Lab</a>
+<span class="__dimensions_badge_embed__" data-doi="10.24072/pcjournal.730" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.24072/pcjournal.730" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-
-</div>
-</div>
-</section>
-<section id="peer-reviewed-journal-papers" class="level2">
-<h2 class="anchored" data-anchor-id="peer-reviewed-journal-papers">Peer-reviewed Journal Papers</h2>
-<div id="listing-peer-reviewed" class="quarto-listing quarto-listing-container-custom">
-<div class="pub-listing list">
-<div class="pub-item" data-index="0" data-categories="MjAyMCUyQ3NlbGVjdGVkJTJDcGVlci1yZXZpZXdlZCUyQ2hpZ2hseS1jaXRlZCUyQ25hdHVyZS1zZXJpZXMlMkNwb3dlci1zeXN0ZW0lMkNzd2l0Y2gtY2hpbmElMkNzb2xhciUyQ3dpbmQlMkNzdG9yYWdl" data-listing-date-sort="1589515200000">
-<p><span class="listing-title d-none">Rapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System</span> <span class="listing-author d-none"><strong>He, Gang</strong>*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke*</span> <span class="listing-date d-none">May 15, 2020</span></p>
+<div class="pub-item" data-index="1">
+<p><span class="listing-title d-none">Alarming conservation status of Western European steppe birds and their habitats: An expert-based review of current threats, traits and knowledge gaps</span> <span class="listing-author d-none">Gómez-Catasús, Julia and Benítez-López, Ana and Díaz, Mario and González del Portillo, David and Pérez-Granados, Cristian and Alonso, Juan Carlos and Arroyo, Beatriz and Abril-Colón, Inmaculada and Barrero, Adrián and Barrientos, Rafael and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Brotons, Lluís and Bustillo-de la Rosa, Daniel and Cabodevilla, Xabier and Carrascal, Luis M. and Carricondo, Ana and Casas, Fabián and Catry, Inês and Crispim-Mendes, Tiago and Erciyas-Yavuz, Kiraz and Galván, Ismael and Gameiro, João and García, Jesús T. and Giralt, David and Illera, Juan Carlos and Leiva, Antonio and López-Iborra, Germán M. and Mañosa, Santi and Marques, Ana T. and Martín, Carlos A. and Medrano-Vizcaíno, Pablo and Morales, Manuel B. and Moreira, Francisco and Mougeot, François and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Oñate-Casado, Javier and Palacín, Carlos and Pearce-Higgins, James W. and Petrusková, Tereza and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Sanz-Pérez, Ana and Seoane, Javier and Serrano, David and Silva, João Paulo and Tarjuelo, Rocío and Traba, Juan and Tryjanowski, Piotr and Ucero, Alberto and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Başkent, Emin Zeki and Zurdo, Julia and Bravo, Carolina</span> <span class="listing-date d-none">2025-01-01</span></p>
 <div class="listing-categories d-none">
-<pre><code>&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('MjAyMA=='); return false;"&gt;2020&lt;/span&gt;
 
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c2VsZWN0ZWQ='); return false;"&gt;selected&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('cGVlci1yZXZpZXdlZA=='); return false;"&gt;peer-reviewed&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('aGlnaGx5LWNpdGVk'); return false;"&gt;highly-cited&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('bmF0dXJlLXNlcmllcw=='); return false;"&gt;nature-series&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('cG93ZXItc3lzdGVt'); return false;"&gt;power-system&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c3dpdGNoLWNoaW5h'); return false;"&gt;switch-china&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c29sYXI='); return false;"&gt;solar&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('d2luZA=='); return false;"&gt;wind&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c3RvcmFnZQ=='); return false;"&gt;storage&lt;/span&gt;</code></pre>
 </div>
 <p class="pub-citation">
-<span class="pub-authors"><strong>He, Gang</strong>*, Jiang Lin*, Froylan Sifuentes, Xu Liu, Nikit Abhyankar, and Amol Phadke*</span>. <span class="pub-year">2020</span>. <a href="https://drganghe.github.io/posts/2020-05-ncomms-rapid-re-cost/index.html" class="pub-title">Rapid Cost Decrease of Renewables and Storage Accelerates the Decarbonization of China's Power System</a>. <em class="pub-journal">Nature Communications</em> 11(1): 2486. doi: <a href="https://doi.org/10.1038/s41467-020-16184-x" target="_blank" rel="noopener" class="pub-doi">10.1038/s41467-020-16184-x</a>. <img src="https://drganghe.github.io/files/images/highly-cited-paper-badge.png" title="ESI Highly Cited Paper" alt="Highly cited paper" width="20" style="vertical-align:middle;">
+<span class="pub-authors">Gómez-Catasús, Julia and Benítez-López, Ana and Díaz, Mario and González del Portillo, David and Pérez-Granados, Cristian and Alonso, Juan Carlos and Arroyo, Beatriz and Abril-Colón, Inmaculada and Barrero, Adrián and Barrientos, Rafael and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Brotons, Lluís and Bustillo-de la Rosa, Daniel and Cabodevilla, Xabier and Carrascal, Luis M. and Carricondo, Ana and Casas, Fabián and Catry, Inês and Crispim-Mendes, Tiago and Erciyas-Yavuz, Kiraz and Galván, Ismael and Gameiro, João and García, Jesús T. and Giralt, David and Illera, Juan Carlos and Leiva, Antonio and López-Iborra, Germán M. and Mañosa, Santi and Marques, Ana T. and Martín, Carlos A. and Medrano-Vizcaíno, Pablo and Morales, Manuel B. and Moreira, Francisco and Mougeot, François and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Oñate-Casado, Javier and Palacín, Carlos and Pearce-Higgins, James W. and Petrusková, Tereza and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Sanz-Pérez, Ana and Seoane, Javier and Serrano, David and Silva, João Paulo and Tarjuelo, Rocío and Traba, Juan and Tryjanowski, Piotr and Ucero, Alberto and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Başkent, Emin Zeki and Zurdo, Julia and Bravo, Carolina</span>. <span class="pub-year">2025</span>. <a href="https://www.sciencedirect.com/science/article/pii/S0006320725004513?via%3Dihub" class="pub-title">Alarming conservation status of Western European steppe birds and their habitats: An expert-based review of current threats, traits and knowledge gaps</a>. <em class="pub-journal">Biological Conservation</em> 311. doi: <a href="https://doi.org/10.1016/j.biocon.2025.111414" target="_blank" rel="noopener" class="pub-doi">10.1016/j.biocon.2025.111414</a>.
 </p>
 <p class="pub-links">
-<a href="https://www.nature.com/articles/s41467-020-16184-x.pdf" class="pub-btn btn-pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> PDF</a> <a href="https://github.com/switch-model/switch-china-open-model" class="pub-btn btn-github" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a> <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-16184-x/MediaObjects/41467_2020_16184_MOESM1_ESM.pdf" class="pub-btn btn-supplemental" target="_blank" rel="noopener"><i class="bi bi-paperclip"></i> Supplemental</a> <span class="__dimensions_badge_embed__" data-doi="10.1038/s41467-020-16184-x" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1038/s41467-020-16184-x" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.biocon.2025.111414" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.biocon.2025.111414" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
-<p class="pub-coverage">
-<span class="pub-label">Coverage:</span> <a href="https://news.stonybrook.edu/newsroom/study-shows-decrease-in-renewable-energy-costs-may-serve-as-an-accelerator-for-clean-energy-expansion/">SBU News</a> | <a href="https://eta.lbl.gov/news/falling-prices-could-accelerate-china">LBL News</a> | <a href="https://www.carbonbrief.org/guest-post-chinas-power-sector-could-be-10-per-cent-cheaper-in-2030-with-more-renewables"><em>Carbon Brief</em> Headline</a> | <a href="https://insideclimatenews.org/news/04062020/inside-clean-energy-arkansas-rooftop-solar/"><em>InsideClimateNews</em></a> | <a href="https://subscriber.politicopro.com/article/eenews/1063354565"><em>E&amp;E News</em>/<em>ClimateWire</em></a> | <a href="https://www.forbes.com/sites/energyinnovation/2020/08/10/plummeting-renewable-energy-battery-prices-mean-china-could-hit-62-clean-power-and-cut-costs-11-by-2030/?sh=29fa3f2f1519"><em>Forbes</em></a> | <a href="https://www.nature.com/articles/d41586-020-02927-9"><em>Nature</em> News</a>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="2">
+<p><span class="listing-title d-none">Pesticides in France: ten years of combined exposure to active substances in land, air and surface water</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Perrot, Thomas</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Perrot, Thomas</span>. <span class="pub-year">2025</span>. <a href="https://www.nature.com/articles/s41597-025-04864-6" class="pub-title">Pesticides in France: ten years of combined exposure to active substances in land, air and surface water</a>. <em class="pub-journal">Scientific Data</em> 12(512). doi: <a href="https://doi.org/10.1038/s41597-025-04864-6" target="_blank" rel="noopener" class="pub-doi">10.1038/s41597-025-04864-6</a>.
 </p>
-<p class="pub-presentations">
-<span class="pub-label">Invited presentation:</span> <a href="https://aperc.or.jp/presentations/event_detail.php?article_info__id=388">Asia Pacific Energy Research Centre (APERC) Annual Conference 2020</a> | <a href="https://ceep.bit.edu.cn/xzhd/xshdyg/8c8df4e81437434fb80b7ebb8d973b4c.htm">Beijing Institute of Technology</a> | Dartmouth College | <a href="https://growthlab.hks.harvard.edu/event/research-seminar-achieving-power-sector-carbon-neutrality-in-a-low-cost-renewable-era/">Harvard Kennedy School Growth Lab</a>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1038/s41597-025-04864-6" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1038/s41597-025-04864-6" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="3">
+<p><span class="listing-title d-none">The hidden dimension of low-carbon public transport policies</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Calvet, Coralie and Tardieu, Léa and Roussel, Sébastien and Vaissière, Anne-Charlotte</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Calvet, Coralie and Tardieu, Léa and Roussel, Sébastien and Vaissière, Anne-Charlotte</span>. <span class="pub-year">2025</span>. <a href="https://www.sciencedirect.com/science/article/pii/S092180092500151X" class="pub-title">The hidden dimension of low-carbon public transport policies</a>. <em class="pub-journal">Ecological Economics</em> 236(0921-8009). doi: <a href="https://doi.org/10.1016/j.ecolecon.2025.108668" target="_blank" rel="noopener" class="pub-doi">10.1016/j.ecolecon.2025.108668</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ecolecon.2025.108668" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.ecolecon.2025.108668" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="4">
+<p><span class="listing-title d-none">Key conservation actions for European steppes in the context of the Post-2020 Global Biodiversity Framework</span> <span class="listing-author d-none">Pérez-Granados, Cristian and Benítez-López, Ana and Díaz, Mario and Gameiro, João and Lenzner, Bernd and Roura-Pascual, Núria and Gómez-Catasús, Julia and Tarjuelo, Rocío and Barrero, Adrián and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Bravo, Carolina and Brotons, Lluís and la Rosa, Daniel Bustillo-de and Cabodevilla, Xabier and Búrdalo, Antonio Calvo and Carricondo, Ana and Casas, Fabián and Concepción, Elena D. and Constán-Nava, Soraya and Crispim-Mendes, Tiago and Giralt, David and Golivets, Marina and Latombe, Guillaume and Leiva, Antonio and López-Iborra, Germán M. and López-Poveda, Gabriel and Mañosa, Santi and Martín, Carlos A. and Morales, Manuel B. and Moreira, Francisco and Mougeot, Francois and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Jiménez, Gema Ruiz and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Santos, Carlos and Sanz-Pérez, Ana and Serrano, David and Silva, João Paulo and Torrijo, Antonio and Traba, Juan and Tryjanowski, Piotr and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Zurdo, Julia and Marques, Ana T.</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Pérez-Granados, Cristian and Benítez-López, Ana and Díaz, Mario and Gameiro, João and Lenzner, Bernd and Roura-Pascual, Núria and Gómez-Catasús, Julia and Tarjuelo, Rocío and Barrero, Adrián and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Bravo, Carolina and Brotons, Lluís and la Rosa, Daniel Bustillo-de and Cabodevilla, Xabier and Búrdalo, Antonio Calvo and Carricondo, Ana and Casas, Fabián and Concepción, Elena D. and Constán-Nava, Soraya and Crispim-Mendes, Tiago and Giralt, David and Golivets, Marina and Latombe, Guillaume and Leiva, Antonio and López-Iborra, Germán M. and López-Poveda, Gabriel and Mañosa, Santi and Martín, Carlos A. and Morales, Manuel B. and Moreira, Francisco and Mougeot, Francois and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Jiménez, Gema Ruiz and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Santos, Carlos and Sanz-Pérez, Ana and Serrano, David and Silva, João Paulo and Torrijo, Antonio and Traba, Juan and Tryjanowski, Piotr and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Zurdo, Julia and Marques, Ana T.</span>. <span class="pub-year">2025</span>. <a href="https://link.springer.com/article/10.1007/s11625-024-01602-6" class="pub-title">Key conservation actions for European steppes in the context of the Post-2020 Global Biodiversity Framework</a>. <em class="pub-journal">Sustainability Science</em> 20. doi: <a href="https://doi.org/10.1007/s11625-024-01602-6" target="_blank" rel="noopener" class="pub-doi">10.1007/s11625-024-01602-6</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1007/s11625-024-01602-6" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1007/s11625-024-01602-6" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="5">
+<p><span class="listing-title d-none">Assessing in-field pesticide effects under European regulation and its implications for biodiversity: a workshop report</span> <span class="listing-author d-none">Solé, Magali and Brendel, Stephan and Aldrich, Annette and Dauber, Jens and Ewald, Julie and Duquesne, Sabine and Gottschalk, Eckhard and Hoffmann, Jörg and Kuemmerlen, Mathias and Leake, Alastair and others</span> <span class="listing-date d-none">2024-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Solé, Magali and Brendel, Stephan and Aldrich, Annette and Dauber, Jens and Ewald, Julie and Duquesne, Sabine and Gottschalk, Eckhard and Hoffmann, Jörg and Kuemmerlen, Mathias and Leake, Alastair and others</span>. <span class="pub-year">2024</span>. <a href="https://link.springer.com/article/10.1186/s12302-024-00977-8" class="pub-title">Assessing in-field pesticide effects under European regulation and its implications for biodiversity: a workshop report</a>. <em class="pub-journal">Environmental Sciences Europe</em> 36(153). doi: <a href="https://doi.org/10.1186/s12302-024-00977-8" target="_blank" rel="noopener" class="pub-doi">10.1186/s12302-024-00977-8</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1186/s12302-024-00977-8" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1186/s12302-024-00977-8" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="6">
+<p><span class="listing-title d-none">Degrowth scenarios for biodiversity? Key methodological steps and a call for collaboration</span> <span class="listing-author d-none">Otero, Iago and <strong>Rigal, Stanislas</strong> and Pereira, Laura and Kim, HyeJin and Gamboa, Gonzalo and Tello, Enric and Gr{^e}t-Regamey, Adrienne</span> <span class="listing-date d-none">2024-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Otero, Iago and <strong>Rigal, Stanislas</strong> and Pereira, Laura and Kim, HyeJin and Gamboa, Gonzalo and Tello, Enric and Gr{^e}t-Regamey, Adrienne</span>. <span class="pub-year">2024</span>. <a href="https://link.springer.com/article/10.1007/s11625-024-01483-9" class="pub-title">Degrowth scenarios for biodiversity? Key methodological steps and a call for collaboration</a>. <em class="pub-journal">Sustainability Science</em>. doi: <a href="https://doi.org/10.1007/s11625-024-01483-9" target="_blank" rel="noopener" class="pub-doi">10.1007/s11625-024-01483-9</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1007/s11625-024-01483-9" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1007/s11625-024-01483-9" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="7">
+<p><span class="listing-title d-none">Investigating the heterogeneity within Wild bird indices in Europe</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span> <span class="listing-date d-none">2024-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span>. <span class="pub-year">2024</span>. <a href="https://www.sciencedirect.com/science/article/pii/S0006320724000132" class="pub-title">Investigating the heterogeneity within Wild bird indices in Europe</a>. <em class="pub-journal">Biological Conservation</em> 290. doi: <a href="https://doi.org/10.1016/j.biocon.2024.110452" target="_blank" rel="noopener" class="pub-doi">10.1016/j.biocon.2024.110452</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.biocon.2024.110452" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.biocon.2024.110452" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="8">
+<p><span class="listing-title d-none">Farmland practices are driving bird population decline across Europe</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Dakos, Vasilis and Alonso, Hany and Auniņš, Ainārs and Benkő, Zoltán and Brotons, Lluís and Chodkiewicz, Tomasz and Chylarecki, Przemysław and De Carli, Elisabetta and Del Moral, Juan Carlos and Domşa, Cristian and Escandell, Virginia and Fontaine, Benoît and Foppen, Ruud and Gregory, Richard and Harris, Sarah and Herrando, Sergi and Husby, Magne and Ieronymidou, Christina and Jiguet, Frédéric and Kennedy, John and Klvaňová, Alena and Kmecl, Primož and Kuczyński, Lechosław and Kurlavičius, Petras and Kålås, John Atle and Lehikoinen, Aleksi and Lindström, Åke and Lorrillière, Romain and Moshøj, Charlotte and Nellis, Renno and Noble, David and Eskildsen, Daniel Palm and Paquet, Jean-Yves and Pélissié, Mathieu and Pladevall, Clara and Portolou, Danae and Reif, Jiří and Schmid, Hans and Seaman, Benjamin and Szabo, Zoltán D. and Szép, Tibor and Florenzano, Guido Tellini and Teufelbauer, Norbert and Trautmann, Sven and Van Turnhout, Chris and Vermouzek, Zdeněk and Vikstrøm, Thomas and Voříšek, Petr and Weiserbs, Anne and Devictor, Vincent</span> <span class="listing-date d-none">2023-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Dakos, Vasilis and Alonso, Hany and Auniņš, Ainārs and Benkő, Zoltán and Brotons, Lluís and Chodkiewicz, Tomasz and Chylarecki, Przemysław and De Carli, Elisabetta and Del Moral, Juan Carlos and Domşa, Cristian and Escandell, Virginia and Fontaine, Benoît and Foppen, Ruud and Gregory, Richard and Harris, Sarah and Herrando, Sergi and Husby, Magne and Ieronymidou, Christina and Jiguet, Frédéric and Kennedy, John and Klvaňová, Alena and Kmecl, Primož and Kuczyński, Lechosław and Kurlavičius, Petras and Kålås, John Atle and Lehikoinen, Aleksi and Lindström, Åke and Lorrillière, Romain and Moshøj, Charlotte and Nellis, Renno and Noble, David and Eskildsen, Daniel Palm and Paquet, Jean-Yves and Pélissié, Mathieu and Pladevall, Clara and Portolou, Danae and Reif, Jiří and Schmid, Hans and Seaman, Benjamin and Szabo, Zoltán D. and Szép, Tibor and Florenzano, Guido Tellini and Teufelbauer, Norbert and Trautmann, Sven and Van Turnhout, Chris and Vermouzek, Zdeněk and Vikstrøm, Thomas and Voříšek, Petr and Weiserbs, Anne and Devictor, Vincent</span>. <span class="pub-year">2023</span>. <a href="https://www.pnas.org/doi/10.1073/pnas.2216573120" class="pub-title">Farmland practices are driving bird population decline across Europe</a>. <em class="pub-journal">PNAS</em> 120(21). doi: <a href="https://doi.org/10.1073/pnas.2216573120" target="_blank" rel="noopener" class="pub-doi">10.1073/pnas.2216573120</a>. <img src="https://drganghe.github.io/files/images/highly-cited-paper-badge.png" title="ESI Highly Cited Paper" alt="Highly cited paper" width="20" style="vertical-align:middle;">
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1073/pnas.2216573120" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1073/pnas.2216573120" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="9">
+<p><span class="listing-title d-none">A toolbox to explore the composition of species dynamics behind multi-species indices</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span> <span class="listing-date d-none">2023-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span>. <span class="pub-year">2023</span>. <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.14117" class="pub-title">A toolbox to explore the composition of species dynamics behind multi-species indices</a>. <em class="pub-journal">Methods in Ecology and Evolution</em> 14(2041-210X). doi: <a href="https://doi.org/10.1111/2041-210X.14117" target="_blank" rel="noopener" class="pub-doi">10.1111/2041-210X.14117</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1111/2041-210X.14117" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1111/2041-210X.14117" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="10">
+<p><span class="listing-title d-none">Social-environmental index: combining social and biophysical indicators reveals limits to growth</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong></span> <span class="listing-date d-none">2022-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong></span>. <span class="pub-year">2022</span>. <a href="https://ecologyandsociety.org/vol27/iss2/art33/" class="pub-title">Social-environmental index: combining social and biophysical indicators reveals limits to growth</a>. <em class="pub-journal">Ecology and Society</em> 27(2). doi: <a href="https://doi.org/10.5751/ES-13238-270233" target="_blank" rel="noopener" class="pub-doi">10.5751/ES-13238-270233</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.5751/ES-13238-270233" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.5751/ES-13238-270233" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="11">
+<p><span class="listing-title d-none">Biotic homogenisation in bird communities leads to large-scale changes in species associations</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Gaüzère, Pierre and Kéfi, Sonia and Forsman, Jukka T. and Kajanus, Mira H. and Mönkkönen, Mikko and Dakos, Vasilis</span> <span class="listing-date d-none">2022-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Gaüzère, Pierre and Kéfi, Sonia and Forsman, Jukka T. and Kajanus, Mira H. and Mönkkönen, Mikko and Dakos, Vasilis</span>. <span class="pub-year">2022</span>. <a href="https://nsojournals.onlinelibrary.wiley.com/doi/pdf/10.1111/oik.08756" class="pub-title">Biotic homogenisation in bird communities leads to large-scale changes in species associations</a>. <em class="pub-journal">Oikos</em> 2022(1600-0706). doi: <a href="https://doi.org/10.1111/oik.08756" target="_blank" rel="noopener" class="pub-doi">10.1111/oik.08756</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1111/oik.08756" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1111/oik.08756" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="12">
+<p><span class="listing-title d-none">A method for classifying and comparing non-linear trajectories of ecological variables</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span> <span class="listing-date d-none">2020-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span>. <span class="pub-year">2020</span>. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1470160X20300509" class="pub-title">A method for classifying and comparing non-linear trajectories of ecological variables</a>. <em class="pub-journal">Ecological Indicators</em> 112(1470-160X). doi: <a href="https://doi.org/10.1016/j.ecolind.2020.106113" target="_blank" rel="noopener" class="pub-doi">10.1016/j.ecolind.2020.106113</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ecolind.2020.106113" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.ecolind.2020.106113" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="13">
+<p><span class="listing-title d-none">New prehistoric avifaunas from the Gambier Group, French Polynesia</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Kirch, Patrick and Worthy, Trevor</span> <span class="listing-date d-none">2018-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Kirch, Patrick and Worthy, Trevor</span>. <span class="pub-year">2018</span>. <a href="https://palaeo-electronica.org/content/2018/2360-gambier-group-fossil-avifaunas" class="pub-title">New prehistoric avifaunas from the Gambier Group, French Polynesia</a>. <em class="pub-journal">Palaeontologia Electronica</em> 21(3). doi: <a href="https://doi.org/10.26879/892" target="_blank" rel="noopener" class="pub-doi">10.26879/892</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.26879/892" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.26879/892" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="14">
+<p><span class="listing-title d-none">A new pterosaur specimen from the Upper Tunbridge Wells Sand Formation (Cretaceous, Valanginian) of southern England and a review of Lonchodectes sagittirostris (Owen 1874)</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Martill, David M and Sweetman, Steven C</span> <span class="listing-date d-none">2018-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Martill, David M and Sweetman, Steven C</span>. <span class="pub-year">2018</span>. <a href="https://chooser.crossref.org/?doi=10.1144%2FSP455.5" class="pub-title">A new pterosaur specimen from the Upper Tunbridge Wells Sand Formation (Cretaceous, Valanginian) of southern England and a review of Lonchodectes sagittirostris (Owen 1874)</a>. <em class="pub-journal">Geological Society, London, Special Publications</em> 455(1): 221-232. doi: <a href="https://doi.org/10.1144/SP455.5" target="_blank" rel="noopener" class="pub-doi">10.1144/SP455.5</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1144/SP455.5" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1144/SP455.5" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="15">
+<p><span class="listing-title d-none">On the rarity of anterior teeth of Asteracanthus magnus (Euselachii: Hybodontiformes)</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Cuny, Gilles</span> <span class="listing-date d-none">2016-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Cuny, Gilles</span>. <span class="pub-year">2016</span>. <a href="https://www.schweizerbart.de/papers/njgpa/detail/279/85425/On_the_rarity_of_anterior_teeth_of_Asteracanthus_m?af=crossref" class="pub-title">On the rarity of anterior teeth of Asteracanthus magnus (Euselachii: Hybodontiformes)</a>. <em class="pub-journal">Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen</em> 279(1). doi: <a href="https://doi.org/10.1127/njgpa/2016/0538" target="_blank" rel="noopener" class="pub-doi">10.1127/njgpa/2016/0538</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1127/njgpa/2016/0538" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1127/njgpa/2016/0538" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 <div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Publications – Quarto Academic</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Publications – Quarto Academic</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Publications – Quarto Academic</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Quarto Academic</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Quarto Academic Website Template adapted by Dr.&nbsp;Gang He</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Quarto Academic Website Template adapted by Dr.&nbsp;Gang He</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlZGVzYw==">Quarto Academic Website Template adapted by Dr.&nbsp;Gang He</span></p>
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Publications – Stanislas Rigal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Publications – Stanislas Rigal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Publications – Stanislas Rigal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Stanislas Rigal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Personal page</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Personal page</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlZGVzYw==">Personal page</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="newspaper-articles" class="level2">
+<h2 class="anchored" data-anchor-id="newspaper-articles">Newspaper articles</h2>
+<div id="listing-newspaper" class="quarto-listing quarto-listing-container-custom">
+<div class="pub-listing list">
+<div class="pub-item" data-index="0">
+<p><span class="listing-title d-none">« Non, la décroissance n’est pas un concept flou » : dix économistes répondent à Jean Pisani-Ferry</span> <span class="listing-author d-none">Collectif</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Collectif</span>. <span class="pub-year">2025</span>. <a href="https://www.lemonde.fr/idees/article/2025/07/05/non-la-decroissance-n-est-pas-un-concept-flou-dix-economistes-repondent-a-jean-pisani-ferry_6618660_3232.html" class="pub-title">« Non, la décroissance n’est pas un concept flou » : dix économistes répondent à Jean Pisani-Ferry</a>. <em class="pub-journal">Le Monde</em>.
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="1">
+<p><span class="listing-title d-none">Les oiseaux, victimes collatérales de l’intensiﬁcation agricole en Europe</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Devictor, Vincent</span> <span class="listing-date d-none">2024-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Devictor, Vincent</span>. <span class="pub-year">2024</span>. <a href="https://theconversation.com/les-oiseaux-victimes-collaterales-de-lintensification-agricole-en-europe-223495" class="pub-title">Les oiseaux, victimes collatérales de l’intensiﬁcation agricole en Europe</a>. <em class="pub-journal">The Conversation</em>.
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="2">
+<p><span class="listing-title d-none">« S’il y a un ennemi à la nature, c’est le capitalisme extractiviste et productiviste »</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong></span> <span class="listing-date d-none">2020-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong></span>. <span class="pub-year">2020</span>. <a href="https://www.lemonde.fr/idees/article/2020/11/27/s-il-y-a-un-ennemi-a-la-nature-c-est-le-capitalisme-extractiviste-et-productiviste_6061307_3232.html" class="pub-title">« S’il y a un ennemi à la nature, c’est le capitalisme extractiviste et productiviste »</a>. <em class="pub-journal">Le Monde</em>.
+</p>
+<hr class="pub-divider">
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+<div class="hidden quarto-markdown-envelope-contents" data-render-id="cGlwZWxpbmUtbGlzdGluZy1wZWVyLXJldmlld2Vk">
+<div class="pub-listing list">
+<div class="pub-item" data-index="0">
+<p><span class="listing-title d-none">Tracking changes in birds' interaction milieu</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span> <span class="listing-date d-none">2026-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span>. <span class="pub-year">2026</span>. <a href="https://peercommunityjournal.org/articles/10.24072/pcjournal.730/" class="pub-title">Tracking changes in birds' interaction milieu</a>. <em class="pub-journal">Peer Community Journal</em> 6(2804-3871). doi: <a href="https://doi.org/10.24072/pcjournal.730" target="_blank" rel="noopener" class="pub-doi">10.24072/pcjournal.730</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.24072/pcjournal.730" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.24072/pcjournal.730" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="1">
+<p><span class="listing-title d-none">Alarming conservation status of Western European steppe birds and their habitats: An expert-based review of current threats, traits and knowledge gaps</span> <span class="listing-author d-none">Gómez-Catasús, Julia and Benítez-López, Ana and Díaz, Mario and González del Portillo, David and Pérez-Granados, Cristian and Alonso, Juan Carlos and Arroyo, Beatriz and Abril-Colón, Inmaculada and Barrero, Adrián and Barrientos, Rafael and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Brotons, Lluís and Bustillo-de la Rosa, Daniel and Cabodevilla, Xabier and Carrascal, Luis M. and Carricondo, Ana and Casas, Fabián and Catry, Inês and Crispim-Mendes, Tiago and Erciyas-Yavuz, Kiraz and Galván, Ismael and Gameiro, João and García, Jesús T. and Giralt, David and Illera, Juan Carlos and Leiva, Antonio and López-Iborra, Germán M. and Mañosa, Santi and Marques, Ana T. and Martín, Carlos A. and Medrano-Vizcaíno, Pablo and Morales, Manuel B. and Moreira, Francisco and Mougeot, François and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Oñate-Casado, Javier and Palacín, Carlos and Pearce-Higgins, James W. and Petrusková, Tereza and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Sanz-Pérez, Ana and Seoane, Javier and Serrano, David and Silva, João Paulo and Tarjuelo, Rocío and Traba, Juan and Tryjanowski, Piotr and Ucero, Alberto and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Başkent, Emin Zeki and Zurdo, Julia and Bravo, Carolina</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Gómez-Catasús, Julia and Benítez-López, Ana and Díaz, Mario and González del Portillo, David and Pérez-Granados, Cristian and Alonso, Juan Carlos and Arroyo, Beatriz and Abril-Colón, Inmaculada and Barrero, Adrián and Barrientos, Rafael and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Brotons, Lluís and Bustillo-de la Rosa, Daniel and Cabodevilla, Xabier and Carrascal, Luis M. and Carricondo, Ana and Casas, Fabián and Catry, Inês and Crispim-Mendes, Tiago and Erciyas-Yavuz, Kiraz and Galván, Ismael and Gameiro, João and García, Jesús T. and Giralt, David and Illera, Juan Carlos and Leiva, Antonio and López-Iborra, Germán M. and Mañosa, Santi and Marques, Ana T. and Martín, Carlos A. and Medrano-Vizcaíno, Pablo and Morales, Manuel B. and Moreira, Francisco and Mougeot, François and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Oñate-Casado, Javier and Palacín, Carlos and Pearce-Higgins, James W. and Petrusková, Tereza and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Sanz-Pérez, Ana and Seoane, Javier and Serrano, David and Silva, João Paulo and Tarjuelo, Rocío and Traba, Juan and Tryjanowski, Piotr and Ucero, Alberto and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Başkent, Emin Zeki and Zurdo, Julia and Bravo, Carolina</span>. <span class="pub-year">2025</span>. <a href="https://www.sciencedirect.com/science/article/pii/S0006320725004513?via%3Dihub" class="pub-title">Alarming conservation status of Western European steppe birds and their habitats: An expert-based review of current threats, traits and knowledge gaps</a>. <em class="pub-journal">Biological Conservation</em> 311. doi: <a href="https://doi.org/10.1016/j.biocon.2025.111414" target="_blank" rel="noopener" class="pub-doi">10.1016/j.biocon.2025.111414</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.biocon.2025.111414" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.biocon.2025.111414" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="2">
+<p><span class="listing-title d-none">Pesticides in France: ten years of combined exposure to active substances in land, air and surface water</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Perrot, Thomas</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Perrot, Thomas</span>. <span class="pub-year">2025</span>. <a href="https://www.nature.com/articles/s41597-025-04864-6" class="pub-title">Pesticides in France: ten years of combined exposure to active substances in land, air and surface water</a>. <em class="pub-journal">Scientific Data</em> 12(512). doi: <a href="https://doi.org/10.1038/s41597-025-04864-6" target="_blank" rel="noopener" class="pub-doi">10.1038/s41597-025-04864-6</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1038/s41597-025-04864-6" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1038/s41597-025-04864-6" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="3">
+<p><span class="listing-title d-none">The hidden dimension of low-carbon public transport policies</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Calvet, Coralie and Tardieu, Léa and Roussel, Sébastien and Vaissière, Anne-Charlotte</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Calvet, Coralie and Tardieu, Léa and Roussel, Sébastien and Vaissière, Anne-Charlotte</span>. <span class="pub-year">2025</span>. <a href="https://www.sciencedirect.com/science/article/pii/S092180092500151X" class="pub-title">The hidden dimension of low-carbon public transport policies</a>. <em class="pub-journal">Ecological Economics</em> 236(0921-8009). doi: <a href="https://doi.org/10.1016/j.ecolecon.2025.108668" target="_blank" rel="noopener" class="pub-doi">10.1016/j.ecolecon.2025.108668</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ecolecon.2025.108668" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.ecolecon.2025.108668" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="4">
+<p><span class="listing-title d-none">Key conservation actions for European steppes in the context of the Post-2020 Global Biodiversity Framework</span> <span class="listing-author d-none">Pérez-Granados, Cristian and Benítez-López, Ana and Díaz, Mario and Gameiro, João and Lenzner, Bernd and Roura-Pascual, Núria and Gómez-Catasús, Julia and Tarjuelo, Rocío and Barrero, Adrián and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Bravo, Carolina and Brotons, Lluís and la Rosa, Daniel Bustillo-de and Cabodevilla, Xabier and Búrdalo, Antonio Calvo and Carricondo, Ana and Casas, Fabián and Concepción, Elena D. and Constán-Nava, Soraya and Crispim-Mendes, Tiago and Giralt, David and Golivets, Marina and Latombe, Guillaume and Leiva, Antonio and López-Iborra, Germán M. and López-Poveda, Gabriel and Mañosa, Santi and Martín, Carlos A. and Morales, Manuel B. and Moreira, Francisco and Mougeot, Francois and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Jiménez, Gema Ruiz and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Santos, Carlos and Sanz-Pérez, Ana and Serrano, David and Silva, João Paulo and Torrijo, Antonio and Traba, Juan and Tryjanowski, Piotr and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Zurdo, Julia and Marques, Ana T.</span> <span class="listing-date d-none">2025-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Pérez-Granados, Cristian and Benítez-López, Ana and Díaz, Mario and Gameiro, João and Lenzner, Bernd and Roura-Pascual, Núria and Gómez-Catasús, Julia and Tarjuelo, Rocío and Barrero, Adrián and Bolonio, Luis and Bota, Gerard and Brambilla, Mattia and Bravo, Carolina and Brotons, Lluís and la Rosa, Daniel Bustillo-de and Cabodevilla, Xabier and Búrdalo, Antonio Calvo and Carricondo, Ana and Casas, Fabián and Concepción, Elena D. and Constán-Nava, Soraya and Crispim-Mendes, Tiago and Giralt, David and Golivets, Marina and Latombe, Guillaume and Leiva, Antonio and López-Iborra, Germán M. and López-Poveda, Gabriel and Mañosa, Santi and Martín, Carlos A. and Morales, Manuel B. and Moreira, Francisco and Mougeot, Francois and Nikolov, Boris and Olea, Pedro P. and Onrubia, Alejandro and Reverter, Margarita and Revilla-Martín, Natalia and <strong>Rigal, Stanislas</strong> and Jiménez, Gema Ruiz and Sáez-Gómez, Pedro and Šálek, Martin and Salgado, Iván and Santangeli, Andrea and Santos, Carlos and Sanz-Pérez, Ana and Serrano, David and Silva, João Paulo and Torrijo, Antonio and Traba, Juan and Tryjanowski, Piotr and Václav, Radovan and Valera, Francisco and Vögeli, Matthias and Zurdo, Julia and Marques, Ana T.</span>. <span class="pub-year">2025</span>. <a href="https://link.springer.com/article/10.1007/s11625-024-01602-6" class="pub-title">Key conservation actions for European steppes in the context of the Post-2020 Global Biodiversity Framework</a>. <em class="pub-journal">Sustainability Science</em> 20. doi: <a href="https://doi.org/10.1007/s11625-024-01602-6" target="_blank" rel="noopener" class="pub-doi">10.1007/s11625-024-01602-6</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1007/s11625-024-01602-6" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1007/s11625-024-01602-6" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="5">
+<p><span class="listing-title d-none">Assessing in-field pesticide effects under European regulation and its implications for biodiversity: a workshop report</span> <span class="listing-author d-none">Solé, Magali and Brendel, Stephan and Aldrich, Annette and Dauber, Jens and Ewald, Julie and Duquesne, Sabine and Gottschalk, Eckhard and Hoffmann, Jörg and Kuemmerlen, Mathias and Leake, Alastair and others</span> <span class="listing-date d-none">2024-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Solé, Magali and Brendel, Stephan and Aldrich, Annette and Dauber, Jens and Ewald, Julie and Duquesne, Sabine and Gottschalk, Eckhard and Hoffmann, Jörg and Kuemmerlen, Mathias and Leake, Alastair and others</span>. <span class="pub-year">2024</span>. <a href="https://link.springer.com/article/10.1186/s12302-024-00977-8" class="pub-title">Assessing in-field pesticide effects under European regulation and its implications for biodiversity: a workshop report</a>. <em class="pub-journal">Environmental Sciences Europe</em> 36(153). doi: <a href="https://doi.org/10.1186/s12302-024-00977-8" target="_blank" rel="noopener" class="pub-doi">10.1186/s12302-024-00977-8</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1186/s12302-024-00977-8" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1186/s12302-024-00977-8" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="6">
+<p><span class="listing-title d-none">Degrowth scenarios for biodiversity? Key methodological steps and a call for collaboration</span> <span class="listing-author d-none">Otero, Iago and <strong>Rigal, Stanislas</strong> and Pereira, Laura and Kim, HyeJin and Gamboa, Gonzalo and Tello, Enric and Gr{^e}t-Regamey, Adrienne</span> <span class="listing-date d-none">2024-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Otero, Iago and <strong>Rigal, Stanislas</strong> and Pereira, Laura and Kim, HyeJin and Gamboa, Gonzalo and Tello, Enric and Gr{^e}t-Regamey, Adrienne</span>. <span class="pub-year">2024</span>. <a href="https://link.springer.com/article/10.1007/s11625-024-01483-9" class="pub-title">Degrowth scenarios for biodiversity? Key methodological steps and a call for collaboration</a>. <em class="pub-journal">Sustainability Science</em>. doi: <a href="https://doi.org/10.1007/s11625-024-01483-9" target="_blank" rel="noopener" class="pub-doi">10.1007/s11625-024-01483-9</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1007/s11625-024-01483-9" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1007/s11625-024-01483-9" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="7">
+<p><span class="listing-title d-none">Investigating the heterogeneity within Wild bird indices in Europe</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span> <span class="listing-date d-none">2024-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span>. <span class="pub-year">2024</span>. <a href="https://www.sciencedirect.com/science/article/pii/S0006320724000132" class="pub-title">Investigating the heterogeneity within Wild bird indices in Europe</a>. <em class="pub-journal">Biological Conservation</em> 290. doi: <a href="https://doi.org/10.1016/j.biocon.2024.110452" target="_blank" rel="noopener" class="pub-doi">10.1016/j.biocon.2024.110452</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.biocon.2024.110452" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.biocon.2024.110452" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="8">
+<p><span class="listing-title d-none">Farmland practices are driving bird population decline across Europe</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Dakos, Vasilis and Alonso, Hany and Auniņš, Ainārs and Benkő, Zoltán and Brotons, Lluís and Chodkiewicz, Tomasz and Chylarecki, Przemysław and De Carli, Elisabetta and Del Moral, Juan Carlos and Domşa, Cristian and Escandell, Virginia and Fontaine, Benoît and Foppen, Ruud and Gregory, Richard and Harris, Sarah and Herrando, Sergi and Husby, Magne and Ieronymidou, Christina and Jiguet, Frédéric and Kennedy, John and Klvaňová, Alena and Kmecl, Primož and Kuczyński, Lechosław and Kurlavičius, Petras and Kålås, John Atle and Lehikoinen, Aleksi and Lindström, Åke and Lorrillière, Romain and Moshøj, Charlotte and Nellis, Renno and Noble, David and Eskildsen, Daniel Palm and Paquet, Jean-Yves and Pélissié, Mathieu and Pladevall, Clara and Portolou, Danae and Reif, Jiří and Schmid, Hans and Seaman, Benjamin and Szabo, Zoltán D. and Szép, Tibor and Florenzano, Guido Tellini and Teufelbauer, Norbert and Trautmann, Sven and Van Turnhout, Chris and Vermouzek, Zdeněk and Vikstrøm, Thomas and Voříšek, Petr and Weiserbs, Anne and Devictor, Vincent</span> <span class="listing-date d-none">2023-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Dakos, Vasilis and Alonso, Hany and Auniņš, Ainārs and Benkő, Zoltán and Brotons, Lluís and Chodkiewicz, Tomasz and Chylarecki, Przemysław and De Carli, Elisabetta and Del Moral, Juan Carlos and Domşa, Cristian and Escandell, Virginia and Fontaine, Benoît and Foppen, Ruud and Gregory, Richard and Harris, Sarah and Herrando, Sergi and Husby, Magne and Ieronymidou, Christina and Jiguet, Frédéric and Kennedy, John and Klvaňová, Alena and Kmecl, Primož and Kuczyński, Lechosław and Kurlavičius, Petras and Kålås, John Atle and Lehikoinen, Aleksi and Lindström, Åke and Lorrillière, Romain and Moshøj, Charlotte and Nellis, Renno and Noble, David and Eskildsen, Daniel Palm and Paquet, Jean-Yves and Pélissié, Mathieu and Pladevall, Clara and Portolou, Danae and Reif, Jiří and Schmid, Hans and Seaman, Benjamin and Szabo, Zoltán D. and Szép, Tibor and Florenzano, Guido Tellini and Teufelbauer, Norbert and Trautmann, Sven and Van Turnhout, Chris and Vermouzek, Zdeněk and Vikstrøm, Thomas and Voříšek, Petr and Weiserbs, Anne and Devictor, Vincent</span>. <span class="pub-year">2023</span>. <a href="https://www.pnas.org/doi/10.1073/pnas.2216573120" class="pub-title">Farmland practices are driving bird population decline across Europe</a>. <em class="pub-journal">PNAS</em> 120(21). doi: <a href="https://doi.org/10.1073/pnas.2216573120" target="_blank" rel="noopener" class="pub-doi">10.1073/pnas.2216573120</a>. <img src="https://drganghe.github.io/files/images/highly-cited-paper-badge.png" title="ESI Highly Cited Paper" alt="Highly cited paper" width="20" style="vertical-align:middle;">
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1073/pnas.2216573120" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1073/pnas.2216573120" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="9">
+<p><span class="listing-title d-none">A toolbox to explore the composition of species dynamics behind multi-species indices</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span> <span class="listing-date d-none">2023-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Knape, Jonas</span>. <span class="pub-year">2023</span>. <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.14117" class="pub-title">A toolbox to explore the composition of species dynamics behind multi-species indices</a>. <em class="pub-journal">Methods in Ecology and Evolution</em> 14(2041-210X). doi: <a href="https://doi.org/10.1111/2041-210X.14117" target="_blank" rel="noopener" class="pub-doi">10.1111/2041-210X.14117</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1111/2041-210X.14117" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1111/2041-210X.14117" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="10">
+<p><span class="listing-title d-none">Social-environmental index: combining social and biophysical indicators reveals limits to growth</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong></span> <span class="listing-date d-none">2022-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong></span>. <span class="pub-year">2022</span>. <a href="https://ecologyandsociety.org/vol27/iss2/art33/" class="pub-title">Social-environmental index: combining social and biophysical indicators reveals limits to growth</a>. <em class="pub-journal">Ecology and Society</em> 27(2). doi: <a href="https://doi.org/10.5751/ES-13238-270233" target="_blank" rel="noopener" class="pub-doi">10.5751/ES-13238-270233</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.5751/ES-13238-270233" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.5751/ES-13238-270233" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="11">
+<p><span class="listing-title d-none">Biotic homogenisation in bird communities leads to large-scale changes in species associations</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Gaüzère, Pierre and Kéfi, Sonia and Forsman, Jukka T. and Kajanus, Mira H. and Mönkkönen, Mikko and Dakos, Vasilis</span> <span class="listing-date d-none">2022-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Gaüzère, Pierre and Kéfi, Sonia and Forsman, Jukka T. and Kajanus, Mira H. and Mönkkönen, Mikko and Dakos, Vasilis</span>. <span class="pub-year">2022</span>. <a href="https://nsojournals.onlinelibrary.wiley.com/doi/pdf/10.1111/oik.08756" class="pub-title">Biotic homogenisation in bird communities leads to large-scale changes in species associations</a>. <em class="pub-journal">Oikos</em> 2022(1600-0706). doi: <a href="https://doi.org/10.1111/oik.08756" target="_blank" rel="noopener" class="pub-doi">10.1111/oik.08756</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1111/oik.08756" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1111/oik.08756" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="12">
+<p><span class="listing-title d-none">A method for classifying and comparing non-linear trajectories of ecological variables</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span> <span class="listing-date d-none">2020-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Devictor, Vincent and Dakos, Vasilis</span>. <span class="pub-year">2020</span>. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1470160X20300509" class="pub-title">A method for classifying and comparing non-linear trajectories of ecological variables</a>. <em class="pub-journal">Ecological Indicators</em> 112(1470-160X). doi: <a href="https://doi.org/10.1016/j.ecolind.2020.106113" target="_blank" rel="noopener" class="pub-doi">10.1016/j.ecolind.2020.106113</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ecolind.2020.106113" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.ecolind.2020.106113" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="13">
+<p><span class="listing-title d-none">New prehistoric avifaunas from the Gambier Group, French Polynesia</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Kirch, Patrick and Worthy, Trevor</span> <span class="listing-date d-none">2018-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Kirch, Patrick and Worthy, Trevor</span>. <span class="pub-year">2018</span>. <a href="https://palaeo-electronica.org/content/2018/2360-gambier-group-fossil-avifaunas" class="pub-title">New prehistoric avifaunas from the Gambier Group, French Polynesia</a>. <em class="pub-journal">Palaeontologia Electronica</em> 21(3). doi: <a href="https://doi.org/10.26879/892" target="_blank" rel="noopener" class="pub-doi">10.26879/892</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.26879/892" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.26879/892" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="14">
+<p><span class="listing-title d-none">A new pterosaur specimen from the Upper Tunbridge Wells Sand Formation (Cretaceous, Valanginian) of southern England and a review of Lonchodectes sagittirostris (Owen 1874)</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Martill, David M and Sweetman, Steven C</span> <span class="listing-date d-none">2018-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Martill, David M and Sweetman, Steven C</span>. <span class="pub-year">2018</span>. <a href="https://chooser.crossref.org/?doi=10.1144%2FSP455.5" class="pub-title">A new pterosaur specimen from the Upper Tunbridge Wells Sand Formation (Cretaceous, Valanginian) of southern England and a review of Lonchodectes sagittirostris (Owen 1874)</a>. <em class="pub-journal">Geological Society, London, Special Publications</em> 455(1): 221-232. doi: <a href="https://doi.org/10.1144/SP455.5" target="_blank" rel="noopener" class="pub-doi">10.1144/SP455.5</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1144/SP455.5" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1144/SP455.5" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="15">
+<p><span class="listing-title d-none">On the rarity of anterior teeth of Asteracanthus magnus (Euselachii: Hybodontiformes)</span> <span class="listing-author d-none"><strong>Rigal, Stanislas</strong> and Cuny, Gilles</span> <span class="listing-date d-none">2016-01-01</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors"><strong>Rigal, Stanislas</strong> and Cuny, Gilles</span>. <span class="pub-year">2016</span>. <a href="https://www.schweizerbart.de/papers/njgpa/detail/279/85425/On_the_rarity_of_anterior_teeth_of_Asteracanthus_m?af=crossref" class="pub-title">On the rarity of anterior teeth of Asteracanthus magnus (Euselachii: Hybodontiformes)</a>. <em class="pub-journal">Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen</em> 279(1). doi: <a href="https://doi.org/10.1127/njgpa/2016/0538" target="_blank" rel="noopener" class="pub-doi">10.1127/njgpa/2016/0538</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1127/njgpa/2016/0538" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1127/njgpa/2016/0538" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Publications – Stanislas Rigal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Publications – Stanislas Rigal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Publications – Stanislas Rigal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Stanislas Rigal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Personal page</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Personal page</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlZGVzYw==">Personal page</span></p>
+</div>
 </div>
 </div>
 <!-- 
@@ -550,6 +1110,25 @@ https://quarto.org/docs/authoring/includes.html
 
 
 </section></main></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -965,7 +1544,7 @@ https://quarto.org/docs/authoring/includes.html
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<a href="http://www.github.com">Your Name</a> ©
+Stanislas Rigal ©
 <script>document.write(new Date().getFullYear())</script>
 </div>   
     <div class="nav-footer-center">
@@ -974,7 +1553,7 @@ https://quarto.org/docs/authoring/includes.html
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/drganghe/quarto-academic-website-template" target="_blank">
+    <a class="nav-link" href="https://github.com/StanislasRigal" target="_blank">
       <i class="bi bi-github" role="img">
 </i> 
     </a>
