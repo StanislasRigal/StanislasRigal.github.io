@@ -87,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-author','listing-subtitle','listing-description','listing-funding','listing-started','listing-ended',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-image","listing-title","listing-author","listing-subtitle","listing-description","listing-started","listing-ended","listing-funding"],
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-description","listing-started","listing-ended"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -167,11 +167,11 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Projects – Stanislas Rigal">
 <meta property="og:description" content="Funded projects">
-<meta property="og:image" content="https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/2023-10/NSF_Official_logo_Med_Res_600ppi_rectangle.png">
+<meta property="og:image" content="https://quarto.org/quarto.png">
 <meta property="og:site_name" content="Stanislas Rigal">
 <meta name="twitter:title" content="Projects – Stanislas Rigal">
 <meta name="twitter:description" content="Funded projects">
-<meta name="twitter:image" content="https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/2023-10/NSF_Official_logo_Med_Res_600ppi_rectangle.png">
+<meta name="twitter:image" content="https://quarto.org/quarto.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -282,8 +282,6 @@ window.Quarto = {
     <select id="listing-projects-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-projects'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-image" data-direction="asc">
-      </option>
       <option value="listing-title-sort" data-direction="asc">
         Title
       </option>
@@ -302,9 +300,6 @@ window.Quarto = {
       <option value="listing-ended" data-direction="asc">
         End
       </option>
-      <option value="listing-funding" data-direction="asc">
-        Funding
-      </option>
     </select>
   </div>
     <div class="input-group input-group-sm quarto-listing-filter">
@@ -317,7 +312,7 @@ window.Quarto = {
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-image" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;"> </a>
+ 
 </th>
 
 <th>
@@ -337,7 +332,7 @@ window.Quarto = {
 </th>
 
 <th>
-<a class="sort" data-sort="listing-funding" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Funding</a>
+Funding
 </th>
 
 <th>
@@ -352,30 +347,58 @@ window.Quarto = {
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-title-sort="Exploring ">
+<tr data-index="0" data-listing-title-sort="BEYONDS">
 <td>
-<span class="listing-image"><img loading="lazy" src="https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/2023-10/NSF_Official_logo_Med_Res_600ppi_rectangle.png" style="height: 30px;"></span>
+<span class="listing-image">&nbsp;</span>
 </td>
 <td>
-<a href="https://www.nsf.gov/" class="title listing-title">Exploring </a>
+<a href="https://www.fondationbiodiversite.fr/en/the-frb-in-action/programs-and-projects/le-cesab/beyonds/" class="title listing-title">BEYONDS</a>
 </td>
 <td>
-<span class="listing-author">Academic Website</span>
+<span class="listing-author">Clélia Sirami, Lauriane Mouysset, Stanislas RIGAL, Tim Newbold, Abhishek Chaudhary, Riccardo Bommarco, Ziga Malek, Laura Pereira, Rémi Prudhomme, Vincent Devictor, Guy Pe’er, Coralie Calvet, Iago Otero</span>
 </td>
 <td>
-<span class="listing-subtitle">Funder</span>
+<span class="listing-subtitle">FRB-MTE-OFB</span>
 </td>
 <td>
-<span class="listing-description">The goal of this project is to investigate .</span>
+<span class="listing-description">The BEYONDS project aims to explore the consequences of alternative societal trajectories on biodiversity conservation and to fill a gap in predictive analyses of biodiversity.</span>
 </td>
 <td>
-<span class="listing-funding">$0</span>
+<span class="listing-funding">&nbsp;</span>
+</td>
+<td>
+<span class="listing-started">2025</span>
+</td>
+<td>
+<span class="listing-ended">2028</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-title-sort="NEST(s) 2050">
+<td>
+<span class="listing-image">&nbsp;</span>
+</td>
+<td>
+<a href="https://www.fondationbiodiversite.fr/la-frb-en-action/programmes-et-projets/programme-scenario/nests-2050/" class="title listing-title">NEST(s) 2050</a>
+</td>
+<td>
+<span class="listing-author">Colin Fontaine, Stanislas Rigal, Axelle Gregoire, Nelly Pares, Luc Semal, Benoît Fontaine, Romain Lorrilliere, Karine Princé, Hélène Dupont, Mathilde Vimont</span>
+</td>
+<td>
+<span class="listing-subtitle">FRB</span>
+</td>
+<td>
+<span class="listing-description">NEST(s)2050 se base sur les scénarios de Transition(s) 2050 de l’Ademe et explore les impacts que ces scénarios auraient sur l’évolution de la biodiversité commune.</span>
+</td>
+<td>
+<span class="listing-funding">&nbsp;</span>
 </td>
 <td>
 <span class="listing-started">2024</span>
 </td>
 <td>
-<span class="listing-ended">2025</span>
+<span class="listing-ended">2026</span>
 </td>
 
 </tr>
