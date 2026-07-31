@@ -1,4 +1,12 @@
 - section: Peer-reviewed Journal Paper
+  authors: "**Rigal, Stanislas** and Lenormand, Maxime and Tardieu, Léa and Alonso, Hany and Auniņš, Ainārs and Bakx, Tristan R. M. and Boom, Michiel P. and Brambilla, Mattia and Brotons, Lluís and Chodkiewicz, Tomasz and Fontaine, Benoît and Fric, Zdenek Faltynek and Gamero, Anna and Herrando, Sergi and Kålås, John Atle and Kamp, Johannes and Kurlavičius, Petras and Kuussaari, Mikko and Lehikoinen, Aleksi and Maes, Dirk and Mestdagh, Xavier and Musche, Martin and Øien, Ingar Jostein and Pettersson, Lars B. and Reif, Jiří and Rüdisser, Johannes and Šašić, Martina and Schmucki, Reto and Settele, Josef and Stefanescu, Constanti and Stokke, Bård Gunnar and Strebel, Nicolas and Titeux, Nicolas and Trautmann, Sven and Van Swaay, Chris and Luque, Sandra"
+  year: 2026
+  title: Predicted decline in common bird and butterfly species even under conservation policy scenarios in Europe
+  path: "https://doi.org/10.1038/s41559-026-03139-6"
+  journal: Nature Ecology & Evolution
+  doi: 10.1038/s41559-026-03139-6
+
+- section: Peer-reviewed Journal Paper
   authors: "**Rigal, Stanislas** and Devictor, Vincent and Dakos, Vasilis"
   year: 2026
   title: Tracking changes in birds' interaction milieu
