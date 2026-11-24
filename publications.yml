@@ -75,7 +75,7 @@
   doi: 10.1186/s12302-024-00977-8
 
 - section: Peer-reviewed Journal Paper
-  authors: "Otero, Iago and **Rigal, Stanislas** and Pereira, Laura and Kim, HyeJin and Gamboa, Gonzalo and Tello, Enric and Gr{\\^e}t-Regamey, Adrienne"
+  authors: "Otero, Iago and **Rigal, Stanislas** and Pereira, Laura and Kim, HyeJin and Gamboa, Gonzalo and Tello, Enric and Grêt-Regamey, Adrienne"
   year: 2024
   title: Degrowth scenarios for biodiversity? Key methodological steps and a call for collaboration
   path: "https://link.springer.com/article/10.1007/s11625-024-01483-9"
@@ -179,6 +179,12 @@
   title: "Tout est lié : Réponses complexes de la biodiversité aux changements globaux et déterminants socio-économiques"
   path: "https://theses.fr/2021MONTG048"
   doi: 10.70675/e0f497fcz3292z456eza1aez6afaaf44b910
+
+- section: Newspaper
+  authors: "Tardieu, Léa and **Rigal, Stanislas** and Luque, Sandra and Lenormand, Maxime"
+  title: "La biodiversité commune, grande oubliée des politiques de conservation en Europe"
+  path: "https://theconversation.com/la-biodiversite-commune-grande-oubliee-des-politiques-de-conservation-en-europe-292260"
+  journal: The Conversation
 
 - section: Newspaper
   authors: Collectif
