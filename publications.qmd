@@ -11,7 +11,7 @@ css: custom.css
 <!--Include academic icons or buttons-->
 {{< include /files/includes/_academic.qmd >}}
 
-Total citations as of June 2026:
+Total citations as of November 2026:
 
 - [Google Scholar](https://scholar.google.fr/citations?user=mLe9EecAAAAJ&hl=fr&oi=ao): 943 (h-index = 11, i10-index = 12) 
 
