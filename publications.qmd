@@ -13,7 +13,7 @@ css: custom.css
 
 Total citations as of June 2026:
 
-- [Google Scholar](https://scholar.google.fr/citations?user=mLe9EecAAAAJ&hl=fr&oi=ao): 776 (h-index = 10, i10-index = 10) 
+- [Google Scholar](https://scholar.google.fr/citations?user=mLe9EecAAAAJ&hl=fr&oi=ao): 943 (h-index = 11, i10-index = 12) 
 
 ## Selected Work
 
